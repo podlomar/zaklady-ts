@@ -1,0 +1,10 @@
+title: Základy TypeScriptu
+lead: Úvod do rozšíření jazyka JavaScript, které se dnes používá ve většině profesionálních projektech.
+image: assets/ts.svg
+lessons:
+  - seznameni
+  - vlastni
+  - nastaveni
+  - techniky 
+  - ptypy
+  - react
