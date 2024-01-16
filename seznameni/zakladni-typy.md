@@ -1,5 +1,7 @@
 ## Zakladní typy
 
+V Typecriptu máme několik základních typů, ze kterých později budeme skládat typy složitejší.
+
 ### Pravdivnostní hodnoty
 
 Pro pravdivostní hodnoty použijeme typ `boolean`.

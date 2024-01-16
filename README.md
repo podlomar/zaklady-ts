@@ -1,3 +1,3 @@
 # zaklady-ts
 
-Kurz základů Typescriptu pro Kódím.cz
+Kurz základů TypeScriptu pro Kódím.cz

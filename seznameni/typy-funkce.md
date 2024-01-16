@@ -10,7 +10,7 @@ index.ts(1, 32): An argument for 'password' was not provided.
 TypeScript správně poznal, že jsme funkci zapomněli předat parametr. Správně má být:
 
 ```ts
-if (checkPasswordStrength(usePassword) === "weak") {
+if (checkPasswordStrength(userPassword) === "weak") {
 ```
 
 Pokud se podíváme na definici této funkce, uvidíme, že TypeScript odvodil typ parametru `password` jako `any`. Toto je speciální typ, který znamená „cokoliv“. TypeScript jej používá ve chvíli, kdy nedokáže určit, co do proměnné ukládáme.
@@ -27,9 +27,9 @@ Slušně vychovaný programátor také u funkcí uvádí její návratový typ. 
 const checkPasswordStrength = (password: string): string => {
 ```
 
-Tímto máme funkce `checkPassword` perfektně otypovanou. TypeScript nás upozorní vždy, když se ji budeme snažít použít špastně, se špatným parametrem nebo s její návratovou hodnotu budeme dělat něco, co se nedá dělat s řetězcem.
+Tímto máme funkce `checkPassword` perfektně otypovanou. TypeScript nás upozorní vždy, když se ji budeme snažít použít špatně, se špatným parametrem nebo s její návratovou hodnotu budeme dělat něco, co se nedá dělat s řetězcem.
 
-Na závěr ještě spravíme poslední chybku. TypeScript nás upozoruňuje, že na typu `Document` není žádná vlastnot `innerHTLM`. Má pravdu. V podmínce je třeba napsat:
+Na závěr ještě spravíme poslední chybku. TypeScript nás upozoruňuje, že na typu `Document` není žádná vlastnot `innerHTML`. Má pravdu. V podmínce je třeba napsat:
 
 ```ts
 document.body.innerHTML = "<p>Příliš slabé heslo</p>";
