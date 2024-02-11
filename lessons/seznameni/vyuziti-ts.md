@@ -13,7 +13,7 @@ V souboru `index.html` bude uvnitř body pouze políčko pro vstup a tlačítko.
 </body>
 ```
 
-JavaScriptový kód v souboru `index.js` bude vypadat takto:
+Kód stránky zatím napíšeme v čistém JavaScriptu do souboru `index.js`:
 
 ```js
 const checkPasswordStrength = (password) => {
@@ -39,7 +39,7 @@ document.querySelector("#savepass-btn").addEventListener("click", (e) => {
 });
 ```
 
-Jako zkušení programátoři jistě zahlédnete v programu nějaké chyby. Editor VS Code však žádný problém nesignalizuje. Ukonejšeni sladkou ignorancí stránku spustíme a až pod zadání libovolného vstupu do textového políčka obdržíme chybu:
+Jako zkušení programátoři jistě zahlédnete v programu nějaké chyby. Editor VS Code však žádný problém nesignalizuje. Ukonejšeni sladkou ignorancí stránku spustíme a až pod zadání libovolného vstupu do textového políčka obdržíme strašilovou chybu:
 
 ```
 index.js:6 Uncaught TypeError: Cannot read properties of undefined (reading 'length')
@@ -57,21 +57,7 @@ Všimněte si, jak daleko od původního zdroje chyby však došlo k selhání n
 
 Když opravíme překlep ve vlastnosti `value`, zjístíme, že náš program stejně nefunguje. Pojďme tedy vyzkoušet, co se stane, když jej přepíšeme do TypeScriptu.
 
-### JavaScript je TypeScript
-
-Velmi důležítou vlastností TypeScriptu je, že každý JavaScriptový program je validní TypeScriptový program. To znamená, že TypeScriptu můžeme předhodit čistý JavaScript bez jakýchkoliv typových informací. Pokud nikam nenapíšeme typy, TypeScript se pokusí je odvodit sám.
-
-Pokud naši původní proměnnou :var[time] napíšeme v TypeScriptu takto:
-
-```ts
-let time = "18:05";
-```
-
-TypeScript pozná, že do proměnné ukládáme řetězec, a tedy musí být typu `string`.
-
-::fig{src="assets/time-string.png" size=30}
-
-U souboru `index.js` tedy jednoduše změníme přípomu z `.js` na `.ts` a máme TypeScriptový program. V tu chvíli získáme typovou kontrolu a VS Code začne mít mnohem přísnější názory na strukturu našeho kódu. Na několika místehc se začne viditelně zlobit.
+Jak už víme, každý JavaScriptový kód je validní TypeScriptový kód. U souboru `index.js` tak jednoduše změníme přípomu z `.js` na `.ts` a máme TypeScriptový program. V tu chvíli získáme základní typovou kontrolu a VS Code začne mít mnohem přísnější názory na strukturu našeho kódu. Na několika místech se začne viditelně zlobit.
 
 Pojďme si program postupně projít a zjistit, co si o něm TypeScript myslí. Vidíme, že například odvodil, že naše proměnná `inputElement` je typu `Element`.
 
@@ -92,4 +78,33 @@ Property 'valua' does not exist on type 'HTMLInputElement'. Did you mean 'value'
 
 Jakmile opravíme překlep, všimneme si, že TypeScript správně určil typ promměné `userPassword` jako `string`. To nám vyhovuje, takže zde už typ psát nemusíme.
 
-V tuto chvíli náš program stále obsahuje chyby. Odladíme je v další sekci.
+V tuto chvíli náš program stále obsahuje chyby, pojďme je vychytat.
+
+## Chyby ve funkcích
+
+TypeScript si stěžuje na řádku, kde voláme funkci `checkPasswordStrength`:
+
+```
+Expected 1 arguments, but got 0.
+index.ts(1, 32): An argument for 'password' was not provided.
+```
+
+TypeScript správně poznal, že jsme funkci zapomněli předat parametr. Správně má být:
+
+```ts
+if (checkPasswordStrength(userPassword) === "weak") {
+```
+
+Pokud se podíváme na definici této funkce, uvidíme, že TypeScript odvodil typ parametru `password` jako `any`. My však chceme, aby funkce `checkPasswordStrength` pracovala pouze s řetězcem, takže uvedeme typ parametru i návratový typ:
+
+```ts
+const checkPasswordStrength = (password: string): string => {
+```
+
+Tímto máme funkce `checkPassword` perfektně otypovanou. Na závěr ještě spravíme poslední chybku. TypeScript nás upozoruňuje, že na typu `Document` není žádná vlastnost `innerHTML`. Má pravdu. V podmínce je třeba napsat:
+
+```ts
+document.body.innerHTML = "<p>Příliš slabé heslo</p>";
+```
+
+Nyní máme program bez chyby. V další sekci si ukážeme, jak jej spustit.

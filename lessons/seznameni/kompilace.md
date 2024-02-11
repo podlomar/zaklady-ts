@@ -1,6 +1,6 @@
 ## Kompilace TypeScriptu
 
-Náš kód z předchozí lekce už je bez chyb. Potíž je však v tom, že nemáme jak jej spustit. Runtime uvnitř prohlížeče umí spouštět pouze JavaScript. Kdybychom do HTML vložili přímo soubor `index.ts`, prohlížeč by nevěděl, jak jej vykonat.
+Náš kód z předchozí lekce už je bez chyb. Potíž je však v tom, že jej nemáme jak spustit. Runtime uvnitř prohlížeče umí spouštět pouze JavaScript. Kdybychom do HTML vložili přímo soubor `index.ts`, prohlížeč by nevěděl, jak jej vykonat.
 
 Tato situace se řeší tak, že náš TypeScriptový kód přeložíme pomocí speciálního programu do čistého JavaScriptu. Tomuto procesu se odborně říká :term{cs="kompilace" en="compilation"}. Program, který kompilaci provádí se jmenuje `tsc` (TypeScript Compiler). Můžeme jej spustit pomocí `npx`.
 

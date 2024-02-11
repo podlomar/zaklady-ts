@@ -1,8 +1,8 @@
 title: Seznámení s TypeScriptem
 lead: Principy TypeScriptu a základy práce s typy
 sections:
+  - motivace
   - jazyk-ts
+  - funkce-dom
   - vyuziti-ts
-  - typy-funkce
   - kompilace
-  - zakladni-typy
