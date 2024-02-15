@@ -1,4 +1,4 @@
-## Type pro funkce a DOM
+## Typy pro funkce a DOM
 
 Pokud píšeme v TypeScriptu funkci, chceme pro ni vždy definovat typy parametrů, které přijímá, a také typ návratové hodnoty. Například funkce, která přijímá jméno a příjmení a postaví z nich e-mailovou adresu, může vypadat takto:
 
@@ -45,7 +45,7 @@ const emailInput: HTMLInputElement = document.querySelector('input.email');
 Při práci s událostmi se nám hodí základní typ `Event`. 
 
 ```ts
-const handleClick = (event: Event) => {
+const handleClick = (event: Event): void => {
   console.log('Kliknuto');
 };
 ```
@@ -53,7 +53,7 @@ const handleClick = (event: Event) => {
 S potížemi se však setkáme, když budeme chtít správný typ pro hodnotu v `event.target`. Například při získávání hodnoty z formulářového pole:
 
 ```ts
-const handleSubmit = (event: Event) => {
+const handleSubmit = (event: Event): void => {
   event.preventDefault();
   const form = event.target;
 };
@@ -62,7 +62,7 @@ const handleSubmit = (event: Event) => {
 Vlastnost `event.target` je typu `EventTarget`, což ještě obecnější typ než `Element`. Chceme však, aby TypeScript věděl, že `form` je typu `HTMLFormElement`. K tomu použijeme tzv. _type assertion_ nebo-li přetypování:
 
 ```ts
-const handleSubmit = (event: Event) => {
+const handleSubmit = (event: Event): void => {
   event.preventDefault();
   const form = event.target as HTMLFormElement;
 };
