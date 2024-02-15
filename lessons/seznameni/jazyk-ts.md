@@ -2,7 +2,7 @@
 
 TypeScript je takzvaně _typovaná_ nadstavba JavaScriptu, kterou od roku 2012 vyvíjí společnost Microsoft. Díky TypeScriptu je možné lépe organizovat kód ve větších aplikacích. Právě proto se tento jazyk často používá v profesionálním prostředí, kde na větších projektech běžně pracuje mnoho programátorů.
 
-JavaScriptový kód je zvykem psát do souborů s příponou `.js`. Kód v TypeScriptu se analogicky píše do souborů s příponou `.ts`. Založme si proto rovnot soubor `index.ts` a v něm si vytvořme jednoduchou proměnnou typu `string`.
+JavaScriptový kód je zvykem psát do souborů s příponou `.js`. Kód v TypeScriptu se analogicky píše do souborů s příponou `.ts`. Založme si proto rovnou soubor `index.ts` a v něm si vytvořme jednoduchou proměnnou typu `string`.
 
 ```ts
 let time: string = "18:05";
@@ -20,6 +20,18 @@ time = {
 dostaneme od TypeScriptu vynadáno:
 
 ::fig{src=assets/ts-chyba.png size=90}
+
+### Konfigurace
+
+TypeScript je velmi flexibilní jazyk a typovou kontrolu je možné nastavit na různé úrovně přísnosti. Tato nastavení se provádí v souboru `tsconfig.json`, který většinou bývá umístěn v kořenovém adresáři projektu. Abychom měli TypeScript ve VS Code nastavený všichni stejně, vytvoříme v každém projektu tento soubor s nastavím:
+
+```json
+{
+  "include": ["./*.ts"],
+}
+```
+
+Kdybychom to neudělali, VS Code si nastaví TypeScript podle vlastních pravidel, které se mohou lišit od toho, co probíráme v těchto lekcích. Detailnější nastavení si ukážeme v dalších lekcích.
 
 ### Primitivní typy
 
