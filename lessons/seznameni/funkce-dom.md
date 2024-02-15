@@ -18,6 +18,16 @@ const buildEmail = (firstName: string, lastName) => {
 
 Na takovémto zápisu je zajímavé, že TypeScript dokáže správně odvodit, že typ návratové hodnoty bude `string`. Nedokáže však odvodit typ parametru `lastName`, který tak bude typu `any`. Do takovýchto situací se dostávat nechceme, proto si rovnou zavedeme pravidlo, že budem u všech funkcí vždy uvádět typy parametrů i návratové hodnoty.
 
+### Typ `void`
+
+Když potřebujeme otypovat funkci, která nic nevrací, použíjeme k tomu speciální typ `void`. Například funkce, která vypíše na obrazovku pozdrav, může vypadat takto:
+
+```ts
+const greet = (name: string): void => {
+  console.log(`Hello, ${name}!`);
+};
+```
+
 ### Typy pro práci s DOMem
 
 TypeScript také nabízí typy pro práci s DOMem. Když například vybereme ze stránky element pomocí funkce `document.querySelector`, dostaneme zpět typ `Element`.
