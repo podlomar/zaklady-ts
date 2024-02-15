@@ -23,15 +23,18 @@ dostaneme od TypeScriptu vynadáno:
 
 ### Konfigurace
 
-TypeScript je velmi flexibilní jazyk a typovou kontrolu je možné nastavit na různé úrovně přísnosti. Tato nastavení se provádí v souboru `tsconfig.json`, který většinou bývá umístěn v kořenovém adresáři projektu. Abychom měli TypeScript ve VS Code nastavený všichni stejně, vytvoříme v každém projektu tento soubor s nastavím:
+TypeScript je velmi flexibilní jazyk a typovou kontrolu je možné nastavit na různé úrovně přísnosti. Tato nastavení se provádí v souboru `tsconfig.json`, který většinou bývá umístěn v kořenovém adresáři projektu. Abychom měli TypeScript ve VS Code nastavený všichni stejně, vytvoříme v každém projektu tento soubor s nastavením:
 
 ```json
 {
-  "include": ["./*.ts"],
+  "compilerOptions": {
+    "lib": ["es2015", "dom"],
+  },
+  "include": ["./*.ts"]
 }
 ```
 
-Kdybychom to neudělali, VS Code si nastaví TypeScript podle vlastních pravidel, které se mohou lišit od toho, co probíráme v těchto lekcích. Detailnější nastavení si ukážeme v dalších lekcích.
+Kdybychom to neudělali, VS Code si nastaví TypeScript podle vlastních pravidel, které se mohou lišit od toho, co probíráme v těchto lekcích. Detailnější popis nastavení si představíme v dalších lekcích.
 
 ### Primitivní typy
 

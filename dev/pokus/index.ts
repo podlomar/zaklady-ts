@@ -21,3 +21,15 @@ document
       document.body.innerHTML = '<p>Heslo uloženo</p>';
     }
   });
+
+  const handleClick = (event: Event) => {
+    document.body.innerHTML = `Kliknuto na pozici x: ${event.clientX}, y: ${event.clientY}`;
+  };
+
+
+const submitForm = (event: Event): void => {
+  event.preventDefault();
+  const form = event.target as HTMLFormElement;
+  const formData = new FormData(form);
+  console.log(formData);
+};

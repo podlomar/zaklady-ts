@@ -41,3 +41,31 @@ Typ `Element` je ovšem hodně obecný a častěji budeme potřebovat typy pro k
 ```ts
 const emailInput: HTMLInputElement = document.querySelector('input.email');
 ```
+
+Při práci s událostmi se nám hodí základní typ `Event`. 
+
+```ts
+const handleClick = (event: Event) => {
+  console.log('Kliknuto');
+};
+```
+
+S potížemi se však setkáme, když budeme chtít správný typ pro hodnotu v `event.target`. Například při získávání hodnoty z formulářového pole:
+
+```ts
+const handleSubmit = (event: Event) => {
+  event.preventDefault();
+  const form = event.target;
+};
+```
+
+Vlastnost `event.target` je typu `EventTarget`, což ještě obecnější typ než `Element`. Chceme však, aby TypeScript věděl, že `form` je typu `HTMLFormElement`. K tomu použijeme tzv. _type assertion_ nebo-li přetypování:
+
+```ts
+const handleSubmit = (event: Event) => {
+  event.preventDefault();
+  const form = event.target as HTMLFormElement;
+};
+```
+
+Přetypování je obecně velmi nebezpečná technika, která může do kódu vnést nečekané chyby. V tomto jednom případě nám však jiná možnost nezbývá.
