@@ -29,3 +29,11 @@ var checkPasswordStrength = function (password) {
 Prozatím to nebudeme řešit a obsahem souboru `index.js` se nebudeme trápit. Stačí nám důvěra v to, že kompilátor ví, co dělá a že náš program přeložil správně.
 
 Nyní můžeme výsledný soubor `index.js` vložit do HTML a vyzkoušet, že program skutečně funguje.
+
+### Watch mód
+
+Při vývoji je nepohodlné neustále spouštět kompilaci ručně. Proto `tsc` umí pracovat v tzv. _watch módu_, kdy sleduje změny v souborech a překládá je automaticky. Tento mód spustíme takto:
+
+```bash
+$ tsc --watch
+```
