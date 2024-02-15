@@ -25,7 +25,7 @@ const add15Minutes = (hours, minutes) => {
   const totalMinutes = minutes + 15;
   const extraHours = Math.floor(totalMinutes / 60);
   return {
-    hours: (hours + extraHours))% 24,
+    hours: (hours + extraHours) % 24,
     minutes: totalMinutes % 60,
   };
 };

@@ -2,10 +2,16 @@
 
 Náš kód z předchozí lekce už je bez chyb. Potíž je však v tom, že jej nemáme jak spustit. Runtime uvnitř prohlížeče umí spouštět pouze JavaScript. Kdybychom do HTML vložili přímo soubor `index.ts`, prohlížeč by nevěděl, jak jej vykonat.
 
-Tato situace se řeší tak, že náš TypeScriptový kód přeložíme pomocí speciálního programu do čistého JavaScriptu. Tomuto procesu se odborně říká :term{cs="kompilace" en="compilation"}. Program, který kompilaci provádí se jmenuje `tsc` (TypeScript Compiler). Můžeme jej spustit pomocí `npx`.
+Tato situace se řeší tak, že náš TypeScriptový kód přeložíme pomocí speciálního programu do čistého JavaScriptu. Tomuto procesu se odborně říká :term{cs="kompilace" en="compilation"}. Program, který kompilaci provádí se jmenuje `tsc` (TypeScript Compiler). Musíme jej nejprve nainstalovat pomocí nástroje `npm` (Node Package Manager):
 
+```bash
+$ npm install -g typescript
 ```
-$ npx tsc index.ts
+
+Po instalaci můžeme ve složce projektu zavolat příkaz `tsc`. Pokud máme `tsconfig.json` v kořenové složce projektu, můžeme tento příkaz zavolat bez parametrů. 
+
+```bash
+$ tsc
 ```
 
 Výstupem kompilátoru je JavaScriptový soubor `index.js`, který dělá přesně totéž, co TypeScriptový kód v souboru `index.ts`. Všimněte si, že TypeScript má malinko jiný názor na to, jak psát kód v čistém JavaScriptu. Funkce `checkPasswordStrength` v našem zdrojovém souboru definována takto:
