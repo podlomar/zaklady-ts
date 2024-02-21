@@ -1,6 +1,6 @@
 ## Sjednocení typů
 
-V reálných projektech často chceme, aby nějaká proměnná mohla být více než jednoho typu. Můžeme například říct, že PSČ může být buď číslo, nebo řetězec. K tomu v TypeScriptu slouží operátor `|`. 
+V reálných projektech často chceme, aby nějaká proměnná mohla být více než jednoho typu. Můžeme například říct, že PSČ zadané do formuláře může být buď číslo, nebo řetězec. K tomu v TypeScriptu slouží operátor `|`. 
 
 ```ts
 const zipCode: number | string = "180 00";

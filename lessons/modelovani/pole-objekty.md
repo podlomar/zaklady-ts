@@ -1,15 +1,15 @@
 ## Pole a objekty
 
-V minulé lekci jsme si ukázali takzvané _primivitní typy_: `string`, `number`, `boolean`, `null`, `undefined`, `bigint` a `symbol`. Tyto typy slouží k ukládání jednoduchých hodnot, jako jsou čísla, řetězce nebo logické hodnoty. 
+V minulé lekci jsme si ukázali takzvané _primitivní typy_: `string`, `number`, `boolean`, `null`, `undefined`, `bigint` a `symbol`. Tyto typy slouží k ukládání jednoduchých hodnot, jako jsou čísla, řetězce nebo logické hodnoty. Slouží také jako základní stavební kameny pro takzvané _složené typy_, které umožňují ukládat složitější datové struktury.
 
-Pokud chceme vytvořit typ pro pole hodnot, použijeme následující syntaxi:
+Pokud chceme například vytvořit typ pro pole hodnot, použijeme následující syntaxi:
 
 ```ts
 const ages: number[] = [18, 20, 25, 30];
 const names: string[] = ["Alice", "Bob", "Charlie"];
 ```
 
-Stačí tedy vždy napsat typ, který pole obsahuje, a za něj přidat hranaté závorky.
+Stačí tedy vždy napsat typ, který pole obsahuje, a za něj přidat hranaté závorky. V tomto jsou pole velice jednoduchá.
 
 ## Typy pro objekty
 
@@ -24,7 +24,7 @@ interface User {
 }
 ```
 
-Proměnnou s tímto typem pak vytvoříme klasicým způsobem:
+Proměnnou tohoto typu pak vytvoříme klasickým způsobem:
 
 ```ts
 const user: User = {
