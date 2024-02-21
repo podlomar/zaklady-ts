@@ -1,6 +1,7 @@
 ---
 title: Nemovitosti
 demand: 2
+solutionAccess: protected
 ---
 
 Vytvořte v TypeScriptu datový model pro webovou aplikaci, která nabízí nemovitosti k prodeji nebo pronájmu.
