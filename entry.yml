@@ -3,7 +3,7 @@ lead: Úvod do rozšíření jazyka JavaScript, které se dnes používá ve vě
 image: assets/ts.svg
 lessons:
   - lessons/seznameni
-  - lessons/skladani
+  - lessons/modelovani
   - lessons/nastaveni
   - lessons/techniky 
   - lessons/ptypy

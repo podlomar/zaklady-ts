@@ -111,7 +111,7 @@ Pokud se podíváme na definici této funkce, uvidíme, že TypeScript odvodil t
 const checkPasswordStrength = (password: string): string => {
 ```
 
-Tímto máme funkce `checkPassword` perfektně otypovanou. Na závěr ještě spravíme poslední chybku. TypeScript nás upozoruňuje, že na typu `Document` není žádná vlastnost `innerHTML`. Má pravdu. V podmínce je třeba napsat:
+Tímto máme funkci `checkPassword` perfektně otypovanou. Na závěr ještě spravíme poslední chybku. TypeScript nás upozoruňuje, že na typu `Document` není žádná vlastnost `innerHTML`. Má pravdu. V podmínce je třeba napsat:
 
 ```ts
 document.body.innerHTML = "<p>Příliš slabé heslo</p>";
