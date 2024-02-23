@@ -37,12 +37,12 @@ Proměnná `name` tedy není typu `string`, ale typu `"Alice"`. To znamená, že
 Na první pohled takovýto typ působí zbytečně. K čemu je proměnná, která může mít pouze jednu hodnotu? Literální typy se však hodí na místech, kde chceme vytvořit nějaký výčet možností. Například:
 
 ```ts
-const color: "red" | "green" | "blue";
-const direaction: "up" | "down" | "left" | "right";
-const dayOfWeek: 1 | 2 | 3 | 4 | 5 | 6 | 7;
+const color: "red" | "green" | "blue" = "green";
+const direaction: "up" | "down" | "left" | "right" = "left";
+const dayOfWeek: 1 | 2 | 3 | 4 | 5 | 6 | 7 = 4;
 ```
 
-Těmto typům často říká _výčtové typy_.
+Těmto typům se často říká _výčtové typy_.
 
 ## Alias
 

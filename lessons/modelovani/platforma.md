@@ -28,10 +28,10 @@ interface EducationModule {
 }
 ```
 
-Kury se skládají z lekcí, takže určitě budeme potřebovat typ pro lekce. Zároveň každá lekce se někde koná, takže si nejdříve vytvořme typ pro místa konání jménem `Location`:
+Kury se skládají z lekcí, takže určitě budeme potřebovat typ pro lekce. Zároveň každá lekce se někde koná, takže si nejdříve vytvořme typ pro místa konání jménem `LessonLocation`:
 
 ```ts
-interface Location {
+interface LessonLocation {
   type: 'on-line' | 'hybrid' | 'on-site';
   name: string;
   address: string;
@@ -42,7 +42,7 @@ interface Location {
 Pokud je lekce on-line, budeme na místě adresy uvádat URL pro videocall. Pokud je on-site, budeme uvádat adresu místa konání. Pokud je hybridní, budeme uvádat obojí. Například:
 
 ```ts
-const location: Location = {
+const location: LessonLocation = {
   type: 'hybrid',
   name: 'Místnost M7 a Zoom',
   address: 'Koníčkova 123, Praha 4, https://zoom.us/j/1234567890',
@@ -59,7 +59,7 @@ interface Lesson {
   description: string;
   date: string;
   hours: number;
-  location: Location;
+  location: LessonLocation;
   lecturer: string;
 }
 ```

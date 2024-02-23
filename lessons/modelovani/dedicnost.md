@@ -40,36 +40,21 @@ interface Lecturer extends User {
 
 Díky této konstrukci nemusíme v `Student` a `Lecturer` opakovat vlastnosti `name` a `email`. Ty se automaticky převezmou z `User`.
 
-Mezi typy `User`, `Student` panujte takzvaný _IS-A_ vztah. To znamená, že každý student je uživatel. Zkratka pochází z anglického "student IS A user". Stejně tak každý lektor je uživatel. Také se někdy říká, že `Student` a `Lecturer` jsou _podtypy_ typu `User`.
+## Rozhraní a podtypy
 
-Z výše uvedeného logicky plyne, že všude tam, kde očekáváme typ `User`, můžeme použít i typ `Student` nebo `Lecturer`. Když například máme proměnnou typu `User`, můžeme do ní vložit i objekt typu `Student` nebo `Lecturer`:
+Pozor na to, že pokud definujeme objakty pomocí `interface`, nejedná se zde o dědičnost v pravém slova smyslu jak ji možná znáte z objektově orientovaného programování. Typy `Student` a `Lecturer` nejsou podtypy typu `User`. To znamená, že pokud někde typ očekáváme `User`, nemůžeme tam poslat `Student` nebo `Lecturer`.
 
 ```ts
 const bob: Student = {
-  name: 'Bob',
-  email: 'bob.navratil@gmail.com',
-  level: 'intermediate'
+  name: 'Robert',
+  email: 'robert.vlach@seznam.cz',
+  level: 'advanced',
 };
-const user: User = bob;
+
+const user: User = bob; // ❌ toto neprojde
 ```
 
-Stejně tak můžeme vytvořit pole typu `User` a do něj vložit objekty typu `Student` nebo `Lecturer`.
+Přiřazení `bob` do `user` neprojde, protože `Student` má nějaké vlastnosti navíc, které `User` nemá. Naštěstí TypeScript nám na to upozorní.
 
-```ts
-const users: User[] = [
-  { name: 'Alice', email: 'alice.bendova@gmail.com' },
-  { name: 'Bob', email: 'bob.navratil@gmail.com', level: 'intermediate' },
-  { name: 'Charlie', email: 'charlie.parker@gmail.com', courses: ['JavaScript', 'TypeScript'] },
-];
-```
+Jak tuto situaci vyřešit a jak vytvořit skutečný podtyp se dozvíme v dalších lekcích.
 
-Když pak držíme objekt typu `Student` nebo `Lecturer` v proměnné typu `User`, můžeme s ním pracovat pouze jako s objektem typu `User`. To znamená, že můžeme přistupovat pouze k vlastnostem `name` a `email`, ale ne k vlastnostem `level` nebo `courses`.
-
-```ts
-const user: User = users[1];
-console.log(user.name); // OK
-console.log(user.email); // OK
-console.log(user.level); // Chyba
-```
-
-V tuto chvíli vlastně nemám jak zjistit, zda je objekt v poli typu `User` ve skutečnosti objekt typu `Student` nebo `Lecturer`. Jak takovou věc zařídit, se dozvíte v dalších lekcích.
