@@ -1,6 +1,7 @@
 ---
 title: Platba kartou, aktivace karet
 demand: 3
+solutionAccess: protected
 ---
 
 Pokračujte v projektu z předchozího cvičení. V této části se zaměříme na zobrazování typu karty podle zadávaného čísla.
@@ -15,3 +16,8 @@ Každý vydavatel karet uvádí jasná pravidla, jak podle čísla karty poznat 
 
 Implementace zobrazování typu karty při zadávání vstupu není složitá a jistě ji zvládnete vymyslet sami. Programujte rovnou v TypeScriptu a čistě pro cvík uvádějte typy u všech proměnných, i když by je TypeScript dokázal odvodit sám.
 
+:::solution
+
+Řešení celého projektu najdete v [tomto repozitáři](https://github.com/kodim-vyuka/cviceni-platba-reseni).
+
+:::
