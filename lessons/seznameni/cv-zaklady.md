@@ -2,3 +2,4 @@
 
 ::exc[cviceni/funkce]
 ::exc[cviceni/platba1]
+::exc[cviceni/platba2]
