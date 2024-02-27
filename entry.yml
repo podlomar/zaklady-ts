@@ -4,7 +4,7 @@ image: assets/ts.svg
 lessons:
   - lessons/seznameni
   - lessons/modelovani
+  - lessons/rozlisovani
   - lessons/nastaveni
-  - lessons/techniky 
   - lessons/ptypy
   - lessons/react

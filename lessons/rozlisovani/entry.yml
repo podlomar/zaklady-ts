@@ -1,0 +1,6 @@
+title: Rozlišování typů
+lead: Představíme si techniky pro zúžení obecného typu na konkrétnější typ.
+access: protected
+sections:
+  - nadtypy
+  - rozlisovani

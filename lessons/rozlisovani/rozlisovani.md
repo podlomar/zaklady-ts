@@ -1,0 +1,2 @@
+## Rozlišování a zužování typů
+
