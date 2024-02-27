@@ -42,7 +42,7 @@ Díky této konstrukci nemusíme v `Student` a `Lecturer` opakovat vlastnosti `n
 
 ## Rozhraní a podtypy
 
-Pozor na to, že pokud definujeme objakty pomocí `interface`, nejedná se zde o dědičnost v pravém slova smyslu jak ji možná znáte z objektově orientovaného programování. Typy `Student` a `Lecturer` nejsou podtypy typu `User`. To znamená, že pokud někde typ očekáváme `User`, nemůžeme tam poslat `Student` nebo `Lecturer`.
+Pozor na to, že pokud definujeme objakty pomocí `interface`, nejedná se zde o dědičnost v pravém slova smyslu jak ji možná znáte z objektově orientovaného programování. Typy `Student` a `Lecturer` nejsou podtypy typu `User`. To znamená, že pokud někde typ očekáváme `User`, můžeme tam poslat `Student` nebo `Lecturer` jenom díky tomu, že obsahují všechny povinné parametry typu `User`.
 
 ```ts
 const bob: Student = {
@@ -51,10 +51,10 @@ const bob: Student = {
   level: 'advanced',
 };
 
-const user: User = bob; // ❌ toto neprojde
+const user: User = bob; // toto projde, ale jen za určitých okolností a ne díky dědičnosti
 ```
 
-Přiřazení `bob` do `user` neprojde, protože `Student` má nějaké vlastnosti navíc, které `User` nemá. Naštěstí TypeScript nám na to upozorní.
+Přiřazení `bob` do `user` neprojde proto, že `Student` je podtyp `User`, ale proto, že obsahuje všechny povinné vlastnosti typu `User` a je uložený do proměnné. Kdybychom objekt typu `Student` na místě vytvářeli a snažili se ho uložit do proměnné typu user, TypeScript by nás upozornil na to, že má nějaké vlastnosti navíc, které `User` nemá. Ano, je to trochu složité a zamotané. 😇 Pro teď se tím nemusíme trápit a stačí nám vědět, že se nejedná o klasickou dědičnost. 
 
 Jak tuto situaci vyřešit a jak vytvořit skutečný podtyp se dozvíme v dalších lekcích.
 

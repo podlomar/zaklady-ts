@@ -48,7 +48,7 @@ Od této chvíle budeme na všech našich projektech toto nastavení zapinat. Ce
   },
   "include": ["./*.ts"]
 }
-``
+```
 
 ## Literální typy
 
