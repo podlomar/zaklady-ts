@@ -22,6 +22,34 @@ interface User {
 }
 ```
 
+## Strict null checks
+
+Pokud v předchozí ukázce najedete myší na proměnnou `address`, uvidíte, že TypeScript vám bude hlásit typ `string`, nikoliv `string | undefined`. To vypadá jako by nám `undefined` někam zmizelo. TypeScript totiž v základním nastavení typy `null` a `undefined` zcela ignoruje. Máme-li tedy někde proměnnou typ `string` nebo třeba `User`, můžeme do ní bez problémů přiřadit i `null` nebo `undefined`. Takové chování je však téměř vždy nežádoucí, protože při vývoji aplikací chceme přesně řečeno, kde může být `null` a kde ne. 
+
+TypeScript má nastavení `strictNullChecks`, které nám umožňuje zapnout přísnou kontrolu `null` a `undefined`. Když je toto nastavení zapnuté, TypeScript bude hlásit chybu pokaždé, když se pokusíme přiřadit `null` nebo `undefined` do proměnné, do které tyto hodnoty nepatří.
+
+Nastavení `strictNullChecks` se zapíná v souboru `tsconfig.json`:
+
+```json
+{
+  "compilerOptions": {
+    "strictNullChecks": true
+  }
+}
+```
+
+Od této chvíle budeme na všech našich projektech toto nastavení zapinat. Celý `tsconfig.json` bude tedy vypadat takto:
+
+```json
+{
+  "compilerOptions": {
+    "lib": ["es2015", "dom"],
+    "strictNullChecks": true
+  },
+  "include": ["./*.ts"]
+}
+``
+
 ## Literální typy
 
 V TypeScriptu je možné definovat i takzvané literální typy, což je vlastnost, kterou většina jiných typovaných jazyků nemá. Literální typ je takový, který může mít pouze jednu konkrétní hodnotu. Například:
