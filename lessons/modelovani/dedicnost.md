@@ -53,7 +53,7 @@ const student: User = {
 }; 
 ```
 
-Přiřazení `bob` do `user` neprojde, protože `Student` má nějaké vlastnosti navíc, které `User` nemá. Naštěstí TypeScript nám na to upozorní.
+Přiřazení `student` do typu `User` neprojde, protože má nějaké vlastnosti navíc, které `User` nemá. Naštěstí TypeScript nám na to upozorní.
 
 Jak tuto situaci vyřešit a jak vytvořit skutečný podtyp se dozvíme v dalších lekcích.
 
