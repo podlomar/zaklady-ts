@@ -4,6 +4,7 @@ Datové modely v praxi si procvičíme na tvorbě aplikace zobrazující jednodu
 
 ::fig{src="assets/calendar.png" alt="Ukázka aplikace kalendář"}
 
-
-
-
+::exc[cviceni/seznameni]
+::exc[cviceni/datovy-model]
+::exc[cviceni/zobrazeni]
+::exc[cviceni/bonusy]
