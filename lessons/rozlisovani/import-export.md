@@ -26,8 +26,20 @@ Všimněte si, že typ `BasePerson` jsme neexportovali. Počítáme s tím, že 
 V hlavním souboru `index.ts` pak můžeme typy a rozhraní importovat a použít:
 
 ```ts
-import { Person, Student, Teacher } from './model';
+import { Person } from './model.js';
 
-const student: Student = {
-  name: 'Robert',
-  email: '
+const participants: Person[] = [
+  {
+    name: 'Robert',
+    email: 'robert.sipek@gmail.com',
+    level: 'advanced',
+  },
+  {
+    name: 'Zuzana',
+    email: 'zuzana.ovesna@seznam.cz',
+    courses: ['Programování v TypeScriptu', 'Programování v JavaScriptu'],
+  },
+];
+```
+
+Všimněte si, že i když naše TypeScritový soubory mají příponu `.ts`, při importu používáme příponu `.js`. Toto je velmi důležité, protože TypeScript sám o sobě neumí soubory importovat, takže všechny importy prostě zkopíruje do výsledného JavaScriptového souboru tak, jak jsou. Pokud bychom použili příponu `.ts`, ve výsledném JavaScriptu bychom měli impot TypeScriptového souboru, který by pro běh v prohlížeči nebyl použitelný.
