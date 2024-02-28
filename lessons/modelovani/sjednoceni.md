@@ -43,7 +43,8 @@ Od této chvíle budeme na všech našich projektech toto nastavení zapinat. Ce
 ```json
 {
   "compilerOptions": {
-    "lib": ["es2015", "dom"],
+    "lib": ["es2020", "dom"],
+    "module": "es2020",
     "strictNullChecks": true
   },
   "include": ["./*.ts"]

@@ -43,3 +43,18 @@ const participants: Person[] = [
 ```
 
 Všimněte si, že i když naše TypeScritový soubory mají příponu `.ts`, při importu používáme příponu `.js`. Toto je velmi důležité, protože TypeScript sám o sobě neumí soubory importovat, takže všechny importy prostě zkopíruje do výsledného JavaScriptového souboru tak, jak jsou. Pokud bychom použili příponu `.ts`, ve výsledném JavaScriptu bychom měli impot TypeScriptového souboru, který by pro běh v prohlížeči nebyl použitelný.
+
+## Nastavení modulů
+
+Pouze pro připomenutí je dobré zmínit, že pro správné fungování importů a exportů v prohlížeči musíme mít soubor `index.js` vložený do HTML souboru s atributem `type="module"`. Zároveň je třeba mít v souboru `tsconfig.json` nastavenou vlastnost `module` na `es2020`:
+
+```json
+{
+  "compilerOptions": {
+    "lib": ["es2020", "dom"],
+    "module": "es2020",
+    "strictNullChecks": true
+  },
+  "include": ["./*.ts"]
+}
+```

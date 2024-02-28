@@ -28,7 +28,8 @@ TypeScript je velmi flexibilní jazyk a typovou kontrolu je možné nastavit na 
 ```json
 {
   "compilerOptions": {
-    "lib": ["es2015", "dom"],
+    "lib": ["es2020", "dom"],
+    "module": "es2020",
   },
   "include": ["./*.ts"]
 }
