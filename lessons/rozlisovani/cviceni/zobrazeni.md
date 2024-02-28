@@ -35,6 +35,6 @@ Ať už si zvolíte jakýkoliv postup, postupujte dle těchto kroků:
 1. Vytvořte funkci `renderCalendar`, která jako parametr obdrží pole položek kalendáře a zobrazí je na stránce. Zatím se soustřeďte pouze na to, aby se položky zobrazily ve správném dnu a čase.
 1. Zaříďte, aby se úkoly zobrazovaly bílou barvou a události modrou.
 1. Událost by měla mít výšku dle svého trvání, úkol by měl být tak vysoký, aby se do něj vešel text.
-1. Úkoly, které ještě nejsou splněny, zobrazte šedou barvou
+1. Úkoly, které ještě nejsou splněny, zobrazte přeškrtnuté pomocí třídy `task-done`.
 
 Timto byste měli mít aplikaci hotovou. Pokud vám tento projekt přišel jako procházka růžovým sadem, a toužíte po větší výzvě, můžete se pustit do bonusových úkolů.
