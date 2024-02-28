@@ -57,4 +57,4 @@ const participants: Person[] = [
 ];
 ```
 
-Při datovém modelování je tedy důležité myslet nejen na to, jaké vlastnosti mají které typy společné, ale také na to, jaké vztahy podtyp/nadtyp mezi nimi existují. 
+Při datovém modelování je tedy důležité myslet nejen na to, jaké vlastnosti mají které typy společné, ale také na to, jaké vztahy podtyp/nadtyp mezi nimi potřebujeme.
