@@ -27,11 +27,11 @@ interface BasePerson {
   email: string;
 }
 
-interface Student extends Person {
+interface Student extends BasePerson {
   level: 'beginner' | 'intermediate' | 'advanced';
 }
 
-interface Teacher extends Person {
+interface Teacher extends BasePerson {
   courses: string[];
 }
 

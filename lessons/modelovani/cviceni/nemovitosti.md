@@ -13,8 +13,6 @@ Doména obsahuje různé typy nemovitostí: dům, byt, garáž a pozemek. Všech
 - **Pozemek** obsahuje informace o účelu pozemku (komerční nebo obytný) a dostupnosti vody, elektřiny a plynu.
 - **Garáž** obsahuje informace o kapacitě, dostupnosti vody, elektřiny a plynu.
 
-Vytvořte proměnnou obsahující pole různých nemovitostí a vypište je pomocí `console.log`.
-
 :::solution
 ```ts
 interface Estate {
