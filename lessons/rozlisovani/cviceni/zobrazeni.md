@@ -6,7 +6,7 @@ demand: 3
 
 Jakmile máme hotový datový model, můžeme se pustit do zobrazení položek kalendáře.
 
-Nejprve se rozhodněte, jakým způsobem budete vytvářte obsah stránky na základě dat. Můžete použít buď _DOM API_ a `document.createElement` nebo _templating_ a čísté `innerHTML`. Třetí možností by bylo použít nějakou knihovnu, například JSX, ale k tomu se dostaneme až později v lekci o Reactu.
+Nejprve se rozhodněte, jakým způsobem budete vytvářet obsah stránky na základě dat. Můžete použít buď _DOM API_ a `document.createElement` nebo _templating_ a čísté `innerHTML`. Třetí možností by bylo použít nějakou knihovnu, například JSX, ale k tomu se dostaneme až později v lekci o Reactu.
 
 ### DOM API
 
@@ -37,4 +37,4 @@ Ať už si zvolíte jakýkoliv postup, postupujte dle těchto kroků:
 1. Událost by měla mít výšku dle svého trvání, úkol by měl být tak vysoký, aby se do něj vešel text.
 1. Úkoly, které ještě nejsou splněny, zobrazte přeškrtnuté pomocí třídy `task-done`.
 
-Timto byste měli mít aplikaci hotovou. Pokud vám tento projekt přišel jako procházka růžovým sadem a toužíte po větší výzvě, můžete se pustit do bonusových úkolů.
+Tímto byste měli mít aplikaci hotovou. Pokud vám tento projekt přišel jako procházka růžovým sadem a toužíte po větší výzvě, můžete se pustit do bonusových úkolů.
