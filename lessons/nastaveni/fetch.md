@@ -1,0 +1,2 @@
+## Typování dat z API
+
