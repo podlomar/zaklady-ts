@@ -7,7 +7,7 @@ const response = await fetch('https://jsonplaceholder.typicode.com/todos');
 const data = await response.json();
 ```
 
-Tady objevíme, že proměnná `data` je typu `any`. Není se co divit. Metoda `json` nemá k dispozici křišťálovou kouli aby se dozvěděla, jaké jsou datové typy v JSONu, který nám API vrací. Proto si musíme pomoci sami technikou _type assertion_, kterou už jsme ji6 viděli při řešení problémů s `EventTarget`.
+Tady objevíme, že proměnná `data` je typu `any`. Není se co divit. Metoda `json` nemá k dispozici křišťálovou kouli aby se dozvěděla, jaké jsou datové typy v JSONu, který nám API vrací. Proto si musíme pomoci sami technikou _type assertion_, kterou jsme už viděli při řešení problémů s `EventTarget`.
 
 ```ts
 interface Todo {
