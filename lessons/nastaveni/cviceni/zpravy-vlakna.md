@@ -1,5 +1,5 @@
 ---
-title: Zpravy a vlakna
+title: Zprávy a vlákna
 demand: 2
 ---
 
