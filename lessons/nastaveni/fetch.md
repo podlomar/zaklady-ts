@@ -25,7 +25,7 @@ const data = await response.json() as Todo[];
 
 Všimněte si, že naše data fetchujeme přímo na nejvyšší úrovní zdrojového souboru místo toho, abychom měli `await` volání zabalena do nějaké funkce. Tomotu postupu se říká _top-level await_ a je novinkou ve verzi JavaScriptu `es2022`. Do této doby bylo možné všechny `await` volání provádět pouze uvnitř `async` funkcí. Tento nový postup nám umožňuje hezky načítat data z API přímo na začátku našeho programu, což se přesně hodí pro aplikace, která všechna data načtou při refreshi stránky. 
 
-Aby byl TypeScript úplně šťastný, musí mít důvěru v to, že náš zdrojový soubor je modul. To se zajistí tak, že ze souboru něco exportujeme. Pokud zrovna nemáme co užitečného exportovat, stačí udělat export prázdného objektu:
+Aby nám TypeScript dovolil použít top-level await, musí mít důvěru v to, že náš zdrojový soubor je modul. To se zajistí tak, že ze souboru něco exportujeme. Pokud zrovna nemáme co užitečného exportovat, stačí udělat export prázdného objektu:
 
 ```ts
 export {};
