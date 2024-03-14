@@ -11,7 +11,7 @@ Nastavovat Webpack sami od základu není nic radostného. Budeme proto použív
 Pro založení projektu použijeme příkaz
 
 ```bash
-npx init kodim-app@latest nazev-projektu vanilla-js
+npm init kodim-app@latest nazev-projektu vanilla-ts
 ```
 
 Obdržíme projekt s následující strukturou:
