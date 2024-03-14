@@ -1,4 +1,7 @@
 title: Nastavení a konfigurace
 lead: Jak se vyznat v nastavení TypeScriptu a jak si nakonfigurovat projekt.
 access: protected
-sections: []
+sections:
+  - sablona
+  - webpack
+  - tsconfig
