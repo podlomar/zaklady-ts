@@ -5,4 +5,5 @@ sections:
   - sablona
   - webpack
   - tsconfig
+  - fetch
   - cviceni
