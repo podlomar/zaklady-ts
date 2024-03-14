@@ -9,7 +9,7 @@ Obsah souboru `tsconfig.json` v našem projektu vypadá takto:
   "compilerOptions": {
     "target": "es2020",
     "lib": ["es2020", "dom"],
-    "module": "es2020",
+    "module": "es2022",
     "moduleResolution": "bundler",
     "isolatedModules": true,
     "strict": true,
@@ -38,11 +38,9 @@ Velká výhoda pro TypeScript je, když můžeme mít verzi JavaScriptu v `targe
 
 ## Moduly
 
-Nastavení `module` určuje, jaký modulový systém chceme použít. V našem případě je to `es2020`, což v podstatě znamená, že chceme používat `import` a `export`.
+Nastavení `module` určuje, jaký modulový systém chceme použít. V našem případě je to `es2022`, což v podstatě znamená, že chceme používat `import` a `export`. Používáme schválně nastavení `es2022` místo `es2020`, protože chceme mít k dispozici takzvaný [top-level await](https://v8.dev/features/top-level-await), který je novinkou ve verzi `es2022`. Ta umožňuje používat `await` přímo na úrovni modulu, což se nám hodí pro načítaní dat z API. Detaily probereme v následující sekci.
 
-Pomocí `moduleResolution` určujeme, jakým způsobem chceme, aby TypeScript vyhledávaval moduly, které importujeme. Pokud používáme bundler jako je Webpack a jiné, je důležité tuto vlasnost nastavit na `bundler`.
-
-Vlastnost `isolatedModules` je také důležitá pro bundlery, které překládají každý soubor izolovaně. Musíme tedy nastavit `isolatedModules: true`.
+Pomocí `moduleResolution` určujeme, jakým způsobem chceme, aby TypeScript vyhledávaval moduly, které importujeme. Pokud používáme bundler jako je Webpack a jiné, je důležité tuto vlasnost nastavit na `bundler`. Vlastnost `isolatedModules` je také důležitá pro bundlery, které překládají každý soubor izolovaně. Musíme tedy nastavit `isolatedModules: true`.
 
 ## Kvalita kódu
 
