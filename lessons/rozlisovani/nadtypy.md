@@ -17,7 +17,7 @@ interface Teacher extends Person {
 }
 ```
 
-Už jsme viděli, že `extends` nevytváří vztah ::term{cs="podtyp/nadtyp" en="subtype/supertype"}. Nemůžeme tedy do proměnné typu `Person` přímo uložit objekt typu `Student` nebo `Teacher`. Pro účely evidence osob bychom však takovou možnost mít chtěli. Například bychom mohli chtít mít pole všech osob, které se účastní nějaké akce, ať už jsou to studenti nebo lektoři.
+Už jsme viděli, že `extends` nevytváří vztah ::term{cs="podtypnadtyp" en="subtypesupertype"}. Nemůžeme tedy do proměnné typu `Person` přímo uložit objekt typu `Student` nebo `Teacher`. Pro účely evidence osob bychom však takovou možnost mít chtěli. Například bychom mohli chtít mít pole všech osob, které se účastní nějaké akce, ať už jsou to studenti nebo lektoři.
 
 Abychom toto zařídili, musíme náš model trochu přepracovat.
 
