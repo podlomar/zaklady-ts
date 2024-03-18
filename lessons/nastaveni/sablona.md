@@ -4,7 +4,7 @@ S rostoucí velikosté TypeScriptových projektů a přibývajícím počtem zdr
 
 Pro naše účely budeme používat bundler Webpack. Daly by se použít i jiné bundlery, například modernější Vite, ten však má pro TypeScrptové projekty příliš silné názory a je pro začátečníky těžší na pochopení. Webpack je naopak starší a zavedený bundler, který je pro TypeScriptové projekty pořád velmi užitečný.
 
-Nastavovat Webpack sami od základu není nic radostného. Budeme proto používat připravenou šablonu projektu se všemi vhodnými nastaveními už valaděnými. Její konfiguraci si postupně probereme a vysvětlíme.
+Nastavovat Webpack sami od základu není nic radostného. Budeme proto používat připravenou šablonu projektu se všemi vhodnými nastaveními už vyladěnými. Její konfiguraci si postupně probereme a vysvětlíme.
 
 ### Založení projektu
 
@@ -32,7 +32,7 @@ Obdržíme projekt s následující strukturou:
 
 Všimněte si, že všechny zdrojové soubory jsou ve složce `src`. Ve složce `public` máme statické soubory jako `favicon.ico` a případně další jako obrázky, fonty, atd.
 
-Když se podíváte do `package.json`, uvidíte prázdný seznam `dependencies`, což souhlasí s tím, že máme vanilla projekt bez framewroků jako React, JSX apod. V `devDependencies` uvidíte závislosti na Webpacku a dalších nástrojích.
+Když se podíváte do `package.json`, uvidíte prázdný seznam `dependencies`, což souhlasí s tím, že máme vanilla projekt bez frameworků jako React, JSX apod. V `devDependencies` uvidíte závislosti na Webpacku a dalších nástrojích.
 
 Pod klíčem `scripts` uvidíte připravené příkazy pro spuštění vývojového serveru a pro produkční sestavení.
 
