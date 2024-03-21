@@ -16,7 +16,7 @@ Kurz probíhá on-line. Je rozdělen do 6 lekcí, každá lekce probíhá jednou
 
 Kapacita kurzu je 12 účastníků abychom i v on-line odkázali udržet příjemné prostředí.
 
-## Cena: 3 000 kč
+## Cena: 3 600 kč
 
 Cena zahrnuje:
 
@@ -28,5 +28,6 @@ Cena zahrnuje:
 
 Aktuální termíny kurzu:
 
-**právě běží**: čtvrtky od 15. února 2024, lektoruje Martin Podloucký
-**právě běží**: úterky od 20. února, lektoruje Eva Machová
+1. **právě běží**: čtvrtky od 15. února 2024, lektoruje Martin Podloucký
+1. **právě běží**: úterky od 20. února, lektoruje Eva Machová
+1. **plánuje se**: start první půlka května, termín ještě upřesníme
