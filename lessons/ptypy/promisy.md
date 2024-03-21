@@ -5,7 +5,7 @@ Jedna z nejčastějších situací, kdy potkáme parametrický typ, je práce s 
 Když z webu chceme stáhnout seznam všech TODO úkolů, nejdříve potřebujeme vytvořit datový typ pro jeden úkol:
 
 ```ts
-type Todo = {
+interface Todo = {
   userId: number;
   id: number;
   title: string;
@@ -23,9 +23,9 @@ const fetchTodos = async (): Promise<Todo[]> => {
 };
 ```
 
-Všimněte si, že funkci musíme definovat jako `async`, protože v ní používáme `await`. Každá `async` funkce musí vracet `Promise`, jinak nám TypeScript vynadá. Typ `Promise` má jeden generický parametr, který určuje, jaký typ dat bude výsledkem promisu. V našem případě je to pole `Todo[]`.
+Všimněte si, že funkci musíme definovat jako `async`, protože v ní používáme `await`. Zároveň, pokud `async` funkce vrací hodnotu, JavaScript automaticky obalí tuto hodnotu do promisu. Naše funkce tedy nemůže vracet přímo pole `Todo[]`, ale musí vracet `Promise<Todo[]>`. Pokud bychom z `async` funkce nevraceli `Promise`, TypeScript nám hned vynadá, abychom rychle zjistili, že jsme udělali chybu. 
 
-Nyní můžeme funkci zavolat a zkontrolovat, že výsledek je pole `Todo[]`:
+Typ `Promise` má jeden generický parametr, který určuje, jaký typ dat bude výsledkem promisu. V našem případě je to pole `Todo[]`. Naši funkce můžeme zavolat a zkontrolovat, že výsledek je pole `Todo[]`:
 
 ```ts
 const todos = await fetchTodos();
@@ -36,7 +36,7 @@ Pokud jsme funkci `fetchTodos` zavolali správně s `await`, TypeScript automati
 
 Výhoda je, že pokud v takovém případě zkusíme přistoupit k prvku `todos[0].title`, dostaneme od TypeScriptu patřičně vynadáno, protože `todos` není pole. Díky typové kontrole se nám tak nestane, že bychom někde zapomněli `await` a přišli na to až někde na produkci.
 
-## Typy pro fetchování dat
+<!-- ## Typy pro fetchování dat
 
 Co se týče generických typů, můžeme zajít ještě o kousek dál. Při fetchování dat ze serveru můžeme dostat odpověď 200, tedy všechno je v pořádku, 4xx, tedy nějaká chyba na straně klienta, nebo 5xx, což je chyba na straně serveru. Víme, že tyto možnosti mohou nastat při jakémkoliv dotazu nehledě na to, jaká přesně data očekáváme. Můžeme si tak dopředu připravit typ, který bude obsahovat buď nějaká předem neznámá data, nebo dvě možnosti chyby:
 
@@ -114,4 +114,4 @@ if (todos.status === 'ok') {
 }
 ```
 
-Jen pozor, že zrovna server [{JSON} Placeholder](https://jsonplaceholder.typicode.com) tímto způsobem nekomunikuje. Výše uvedený příklad je tedy pouze ukázkou, jak bychom mohli pomocí generických typů vytvořit obecnou funkci pro fetchování dat z API s podporou chybových stavů. Všimnetě si, že jde o velmi podobný princip jako u typu `Option`.
+Jen pozor, že zrovna server [{JSON} Placeholder](https://jsonplaceholder.typicode.com) tímto způsobem nekomunikuje. Výše uvedený příklad je tedy pouze ukázkou, jak bychom mohli pomocí generických typů vytvořit obecnou funkci pro fetchování dat z API s podporou chybových stavů. Všimnetě si, že jde o velmi podobný princip jako u typu `Option`. -->
