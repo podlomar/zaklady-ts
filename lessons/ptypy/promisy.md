@@ -48,7 +48,7 @@ Když pak fetchujeme data z API, může naše funkce vracet tento typ.
 
 ```typescript
 const fetchTodos = async (): Promise<Data<Todo[]>> => {
-  const response = await fetch('https://jsonpplaceholder.typicode.com/todos');
+  const response = await fetch('https://jsonplaceholder.typicode.com/todos');
   if (response.status === 200) {
     const data = await response.json() as Todo[];
     return data;
@@ -97,7 +97,7 @@ Pro fetchvání dat z takového serveru si pak můžeme připravit obecnou funkc
 
 ```typescript
 const fetchData = async <T>(url: string): Promise<Payload<T>> => {
-  const response = await fetch('https://jsonpplaceholder.typicode.com/todos');
+  const response = await fetch('https://jsonplaceholder.typicode.com/todos');
   const payload = await response.json() as Payload<T>;
   return payload;
 };
@@ -106,7 +106,7 @@ const fetchData = async <T>(url: string): Promise<Payload<T>> => {
 Funkci pak použijeme takto:
 
 ```typescript
-const todos = await fetchData<Todo[]>('https://jsonpplaceholder.typicode.com/todos');
+const todos = await fetchData<Todo[]>('https://jsonplaceholder.typicode.com/todos');
 if (todos.status === 'ok') {
   console.log(todos.data[0].title);
 } else {
