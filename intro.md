@@ -5,24 +5,27 @@ Typescript je jeden z nejpoužívanějších jazyků pro vývoj webových aplika
 V kurzu se naučíte:
 
 - základy jazyka Typescript a jeho typového systému,
+- datové modelování,
+- nastavení Typescriptového projektu,
 - doporučené postupy pro vývoj webových aplikací v Typescriptu,
 - základy parametrických typů (generik),
-- nastavení Typescriptového projektu,
 - jak použít Typescript v Reactu.
 
 ## Průběh
 
-Kurz probíhá on-line. Je rozdělen do 6 lekcí, každá lekce probíhá jednou týdně, vždy od 18:00 do 20:00. V průběhu každé lekce se budeme věnovat jak výkladu tak praktickým cvičením.
+Kurz probíhá on-line. Je rozdělen do jedné přípravné lekce a 6 on-line lekcí. Každá on-line lekce probíhá jednou týdně, vždy od 18:00 do 20:00. V průběhu každé lekce se budeme věnovat jak výkladu tak praktickým cvičením.
 
-Kapacita kurzu je 12 účastníků abychom i v on-line odkázali udržet příjemné prostředí.
+Kapacita kurzu je 12 účastníků abychom i v on-line prostoru dokázali udržet příjemné prostředí.
 
-## Cena: 3 600 kč
+## Cena: 4 000 kč
 
 Cena zahrnuje:
 
+- jednu přípravnou lekci pro samostudium,
 - 6 on-line lekcí po 2 hodinách,
 - přístup k podrobným materiálům na webu,
-- přístup na společný Slack s možností klást dotazy.
+- přístup na společný Discord s možností klást dotazy.
+- 4 miniaplikace na procvičení látky a získání zpětné vazby.
 
 ## Přihlášky
 
