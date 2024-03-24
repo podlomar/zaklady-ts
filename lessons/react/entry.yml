@@ -1,4 +1,7 @@
 title: TypeScript v Reactu
 lead: Jak využít TypeScript v Reactu k typování komponent, props, stavů a dalších stavebních bloků.
 access: protected
-sections: []
+sections:
+  - react-ts
+  - komponenty
+  - funkce

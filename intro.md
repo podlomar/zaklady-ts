@@ -25,7 +25,7 @@ Cena zahrnuje:
 - 6 on-line lekcí po 2 hodinách,
 - přístup k podrobným materiálům na webu,
 - přístup na společný Discord s možností klást dotazy.
-- 4 miniaplikace na procvičení látky a získání zpětné vazby.
+- 3 miniaplikace na procvičení látky a získání zpětné vazby.
 
 ## Přihlášky
 
