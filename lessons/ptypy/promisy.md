@@ -5,7 +5,7 @@ Jedna z nejčastějších situací, kdy potkáme parametrický typ, je práce s 
 Když z webu chceme stáhnout seznam všech TODO úkolů, nejdříve potřebujeme vytvořit datový typ pro jeden úkol:
 
 ```ts
-interface Todo = {
+interface Todo {
   userId: number;
   id: number;
   title: string;
