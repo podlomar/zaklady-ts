@@ -10,7 +10,7 @@ Pro založení projektu pro aplikaci _Diagrams_ budeme vycházet z šalobny pro 
    npm init kodim-app@latest diagrams react-ts
    ```
   Tento příkaz vytvoří nový adresář `diagrams`, který si otevřete ve VS Code editoru.
-1.  V [připraveném repozitáři](https://github.com/kodim-vyuka/cviceni-chitchat-zadani) máte k dispozici soubory `index.html` a `styles.css`, ve kterých je vytvořená kostra aplikace s ukázkovým obsahem. Tento repozitář si nemusíte klonovat, stačí si stáhnout soubory přímo z prohlížeče a vložit je do složky `src` ve vašem projektu.
+1.  V [připraveném repozitáři](https://github.com/kodim-vyuka/cviceni-diagrams-zadani) máte k dispozici soubory `index.html` a `styles.css`, ve kterých je vytvořená kostra aplikace s ukázkovým obsahem. Tento repozitář si nemusíte klonovat. Vezměte jej jako návrh aplikace designu aplikce, který budete postupně implementovat v Reactu.
 1.  Spusťte vývojový server příkazem
     ```bash
     npm run dev

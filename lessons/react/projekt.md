@@ -5,3 +5,5 @@ Vytvořte aplikaci, která umožní zobrazovat a vytvářet jednoduché diagramy
 ::fig{src="assets/diagram.png"}
 
 ::exc[cviceni/zalozeni]
+::exc[cviceni/zabrazeni]
+::exc[cviceni/vytvareni]
