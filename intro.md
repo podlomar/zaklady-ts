@@ -17,15 +17,18 @@ Kurz probíhá on-line. Je rozdělen do jedné přípravné lekce a 6 on-line le
 
 Kapacita kurzu je 12 účastníků abychom i v on-line prostoru dokázali udržet příjemné prostředí.
 
-## Cena: 4 000 kč
+Kurz je zakončen **závěrečným testem**, který probíhá samostatně on-line. Po úspěšném absolvování testu obdržíte **certifikát** o absolvování kurzu.
+
+## Cena: 3 900 kč
 
 Cena zahrnuje:
 
 - jednu přípravnou lekci pro samostudium,
 - 6 on-line lekcí po 2 hodinách,
 - přístup k podrobným materiálům na webu,
-- přístup na společný Discord s možností klást dotazy.
-- 3 miniaplikace na procvičení látky a získání zpětné vazby.
+- přístup na společný Discord s možností klást dotazy,
+- 3 miniaplikace na procvičení látky a získání zpětné vazby,
+- závěrečný test a certifikát.
 
 ## Přihlášky
 

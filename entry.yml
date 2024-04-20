@@ -3,7 +3,8 @@ lead: Úvod do rozšíření jazyka JavaScript, které se dnes používá ve vě
 image: assets/ts.svg
 intro: intro.md
 lessons:
-  - lessons/seznameni
+  - lessons/priprava
+  - lessson/dom-objekty
   - lessons/modelovani
   - lessons/rozlisovani
   - lessons/nastaveni
