@@ -1,5 +1,6 @@
 ---
 title: Funkce
+lead: Přepište několik jednoduchých funkcí z JavaScriptu do TypeScriptu
 demand: 2
 ---
 
