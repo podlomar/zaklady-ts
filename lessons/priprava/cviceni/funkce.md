@@ -28,23 +28,4 @@ Přepište všechny následující funkce do TypeScriptu. Správně přidejte ty
     };
     ```
 
-
-<!-- Následujicí funkce obsluhuje nějaký formulář. Obecný typ pro události je `Event`. Pozor však, že `event.target` nevrací typ, který zde potřebujeme. Přečtěte si, na co si TypeScript stěžuje a proveďte přetypování na správný typ.
-
-```ts
-const submitForm = (event) => {
-  event.preventDefault();
-  const form = event.target;
-  const formData = new FormData(form);
-  console.log(formData);
-};
-```
-
-U následujícího posluchače události také doplňte typy. Typ `Event` ovšem nedovoluje přístup k souřadnicím myši. Zkuste vygooglit, jaký typ události je potřeba, abyste měli přístup k vlastnostem `clientX` a `clientY`.
-
-```js
-const handleClick = (event) => {
-  document.body.innerHTML = `Kliknuto na pozici x: ${event.clientX}, y: ${event.clientY}`;
-};
-```
- -->
+Všechny tyto funkce vložte do souboru `index.ts` v nějaké složce. Doplňte soubor `tsconfig.json` dle vzoru z lekce. Spusťte příkaz `tsc` a nechte si vygenerovat JavaScriptový soubor `index.js`. Prohlédněte si výsledný vygenerovaný kód.
