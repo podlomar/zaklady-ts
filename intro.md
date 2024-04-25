@@ -35,5 +35,5 @@ Cena zahrnuje:
 Aktuální termíny kurzu:
 
 1. **právě běží**: čtvrtky od 15. února 2024, lektoruje Martin Podloucký
-1. **právě běží**: úterky od 20. února, lektoruje Eva Machová
-1. **plánuje se**: start první půlka května, termín ještě upřesníme
+1. **právě běží**: úterky od 20. února 2024, lektoruje Eva Machová
+1. **přihlášky**: úterky od 21. května 2024, lektoruje Martin Podloucký
