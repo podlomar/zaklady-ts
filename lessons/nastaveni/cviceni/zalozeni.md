@@ -18,7 +18,7 @@ Pro založení projektu pro aplikaci ChitChat budeme vycházet z šalobny pro va
     a otevřete si aplikaci v prohlížeči. Měli byste vidět kostru aplikace s ukázkovým obsahem.
 1.  Tentokrát budeme pracovat s REST API serverem, který bude poskytovat obsah pro kanály, zprávy a vlákna. Tento server je již připravený v [tomto repozitáři](https://github.com/kodim-vyuka/chitchat-api). Repozitář si naklonujte a otevřete si jej v **novém okně** VS Code editoru. Server se spustí příkazem
     ```bash
-    npx jsonhost@latest
+    npx apidroid@latest
     ```
     Server pak bude běžet na adrese `http://localhost:4000`. Více informací o API najdete přímo v README repozitáře.
 1.  Všimněte si, že nyní vám na počítači běží dva lokální servery. Jeden vývojový pro frontend a druhý pro backend API.

@@ -38,3 +38,9 @@ Ať už si zvolíte jakýkoliv postup, postupujte dle těchto kroků:
 1. Úkoly, které ještě nejsou splněny, zobrazte přeškrtnuté pomocí třídy `task-done`.
 
 Tímto byste měli mít aplikaci hotovou. Pokud vám tento projekt přišel jako procházka růžovým sadem a toužíte po větší výzvě, můžete se pustit do bonusových úkolů.
+
+:::solution
+
+Řešení projektu najdete v [tomto repozitáři](https://github.com/kodim-vyuka/cviceni-kalendar-reseni).
+
+:::

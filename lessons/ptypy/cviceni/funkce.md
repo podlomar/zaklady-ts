@@ -21,3 +21,48 @@ Naprogramuje všechny následující funkce tak, aby pracovaly s polem libovoln�
     ```typescript
     remove([1, 2, 3], 1); // [1, 3]
     ```
+
+:::solution
+```ts
+const head = <T>(array: T[]): T | null => {
+  return array.length === 0 ? null : array[0];
+};
+
+const tail = <T>(array: T[]): T[] => {
+  return array.length === 0 ? [] : array.slice(1);
+};
+
+const butLast = <T>(array: T[]): T[] => {
+  return array.length === 0 ? [] : array.slice(0, array.length - 1);
+};
+
+const last = <T>(array: T[]): T | null => {
+  return array.length === 0 ? null : array[array.length - 1];
+};
+
+const isEmpty = <T>(array: T[]): boolean => {
+  return array.length === 0;
+};
+
+const concat = <T>(array1: T[], array2: T[]): T[] => {
+  return [...array1, ...array2];
+};
+
+const contains = <T>(array: T[], value: T): boolean => {
+  return array.indexOf(value) !== -1;
+};
+
+type ArrayItem<T> = T | null;
+const strip = <T>(array: ArrayItem<T>[]): T[] => {
+  return array.filter((item) => item !== null);
+};
+
+const insert = <T>(array: T[], index: number, value: T): T[] => {
+  return array.slice(0, index).concat([value]).concat(array.slice(index));
+};
+
+const remove = <T>(array: T[], index: number): T[] => {
+  return array.slice(0, index).concat(array.slice(index + 1));
+};
+```
+:::

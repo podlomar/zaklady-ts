@@ -35,3 +35,52 @@ Implementujte funkce pro práci s prioritní frontou:
     - `label`: bug, feature, refactoring...
     - `assignee`: jméno osoby, která má úkol vykonat
     - `projekt`: jméno projektu, ve kterém se úkol nachází
+
+:::solution
+```ts
+const enqueue = <T>(queue: PriorityQueue<T>, queItem: QueueItem<T>): PriorityQueue<T> => {
+  return [...queue, queItem];
+};
+
+// Varianta s null
+const dequeue = <T>(queue: PriorityQueue<T>): QueueItem<T> | null => {
+  if (queue.length === 0) {
+    return null; 
+  }
+
+  let highestPriorityItem = queue[0];
+  for (let i = 1; i < queue.length; i++) {
+    if (queue[i].priority > highestPriorityItem.priority) {
+      highestPriorityItem = queue[i];
+    }
+  }
+
+  return highestPriorityItem;
+}
+
+// Varianta s Option
+interface Some<T> {
+  kind: 'some',
+  value: T,
+}
+
+interface None {
+  kind: 'none',
+}
+
+type Option<T> = Some<T> | None;
+
+const dequeue = <T>(queue: PriorityQueue<T>): Option<QueueItem<T>> => {
+  if (queue.length === 0) {
+    return { kind: 'none' };
+  }
+  let highestPriorityItem = queue[0];
+  queue.forEach((item: QueueItem<T>) => {
+    if (item.priority > highestPriorityItem.priority) {
+      highestPriorityItem = item;
+    }
+  });
+  return { kind: 'some', value: highestPriorityItem };
+};
+```
+::: 
