@@ -7,3 +7,9 @@ Vytvořte aplikaci, která umožní zobrazovat a vytvářet jednoduché diagramy
 ::exc[cviceni/zalozeni]
 ::exc[cviceni/zobrazeni]
 ::exc[cviceni/vytvareni]
+
+:::solution
+
+Řešení projektu najdete v [tomto repozitáři](https://github.com/EvaMach/cviceni-diagramy-reseni).
+
+:::

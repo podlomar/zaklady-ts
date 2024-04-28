@@ -9,3 +9,9 @@ Finální aplikace bude vypadat nějak takto:
 ::exc[cviceni/zalozeni]
 ::exc[cviceni/kanaly]
 ::exc[cviceni/zpravy-vlakna]
+
+:::solution
+
+Řešení projektu najdete v [tomto repozitáři](https://github.com/EvaMach/cviceni-chitchat-reseni).
+
+:::

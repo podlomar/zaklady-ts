@@ -8,3 +8,9 @@ Datové modely v praxi si procvičíme na tvorbě aplikace zobrazující jednodu
 ::exc[cviceni/datovy-model]
 ::exc[cviceni/zobrazeni]
 ::exc[cviceni/bonusy]
+
+:::solution
+
+Řešení projektu bez bonusů najdete v [tomto repozitáři](https://github.com/kodim-vyuka/cviceni-kalendar-reseni).
+
+:::

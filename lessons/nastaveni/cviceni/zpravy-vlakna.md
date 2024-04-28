@@ -30,9 +30,3 @@ Jakmile míte k dispozici všechny informace o tom, který kanál, případně k
 1. zobrazit data na stránce vámi zvoleným způsobem.
 
 Pokračujte v tomto duchu, dokud nebude aplikace funkční, úžasná, krásná, a dokud nepocítíte hřejivý pocit z dobře odvedené práce. Samozřejmě se můžete rozvášnit a přidat nějaké bonusové featury nebo si dokonce pohrát s API serverem a přidat nějaká vlastní data. Představivosti se meze nekladou.
-
-:::solution
-
-Řešení projektu najdete v [tomto repozitáři](https://github.com/EvaMach/cviceni-chitchat-reseni).
-
-:::
