@@ -37,3 +37,9 @@ Na posledy chceme umožnit propojovat boxy pomocí spojnic. Musíme tedy umět o
 
 1. Zkuste zajistit, aby se nedala vytvořit spojnice mezi boxy, které již spojeny jsou.
 1. Ještě lepší by bylo, kdyby se při pokusu o propojení již spojených boxů spojnice smazala, abyh měl uživatel možnost spojnice nejen tytvářet, ale i rušit.
+
+:::solution
+
+Řešení projektu najdete v [tomto repozitáři](https://github.com/EvaMach/cviceni-diagramy-reseni).
+
+:::
