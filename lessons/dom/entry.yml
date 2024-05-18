@@ -1,0 +1,7 @@
+title: DOM a události
+lead: Ukážeme si, jak v TypeScriptu typovat DOM elementy a události a jaké při tom číhají nástrahy.
+access: protected
+sections:
+  - vyuziti-ts
+  - dom
+  - cv-zaklady

@@ -4,7 +4,7 @@ image: assets/ts.svg
 intro: intro.md
 lessons:
   - lessons/priprava
-  - lessons/dom-objekty
+  - lessons/dom
   - lessons/modelovani
   - lessons/rozlisovani
   - lessons/nastaveni
