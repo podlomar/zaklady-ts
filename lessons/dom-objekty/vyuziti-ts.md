@@ -1,10 +1,10 @@
 ## Využití TypeScriptu
 
-Pojďme si na konkrétním případu ukázat, k čemu se nám TypeScript v praxi hodí a kde nám usnadní život.
+Začnemě tuto lekci velmi praktickou ukázkou, jak nám TypeScript může ušetřit spoustu času a nervů pří hledání chyb v nějaké skutečné aplikaci.
 
-Mějme jednoduchou stránku, která umožní uživateli vytvořit si heslo pro svůj účet. Po zadání hesla budeme chtít zkontrolovat, že je dostatečně silné.
+Máme připravenou jednoduchou webovou stránku, která umožní uživateli zadat nové heslo pro svůj účet. Po zadání hesla budeme chtít zkontrolovat, že je dostatečně silné.
 
-V souboru `index.html` bude uvnitř body pouze políčko pro vstup a tlačítko.
+V souboru `index.html` bude uvnitř `body`` pouze políčko pro vstup a tlačítko.
 
 ```html
 <!DOCTYPE html>

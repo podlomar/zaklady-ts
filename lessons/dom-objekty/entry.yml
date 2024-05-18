@@ -2,9 +2,6 @@ title: Objekty a DOM
 lead: Naučíme se, jak v TypeScriptu typovat objekty a jak se vypořádat s typy DOM objektů.
 access: protected
 sections:
-  - motivace
-  - jazyk-ts
-  - funkce-dom
   - vyuziti-ts
-  - kompilace
+  - dom
   - cv-zaklady
