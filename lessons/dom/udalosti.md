@@ -37,7 +37,7 @@ Opět tedy musíme být ve střehu, abychom se sami nedostali do pasti.
 
 Podobně jako DOM elementy, i typy pro události jsou uspořádány do hierarchie podtyp/nadtyp. Nejvýše v této hierarchii je typ `Event`, který je nadtypem pro všechny ostatní typy událostí.
 
-:::fig{src=assets/events.svg size=60}
+::fig{src=assets/events.svg size=60}
 
 ## Přetypování
 
