@@ -27,4 +27,4 @@ Pokud vezmeme několik nejvýznamnějších typů pro práci s DOMem, můžeme j
 
 ::fig{src="assets/elements.svg"}
 
-Zde je vidět, že například `HTMLInputElement` je přimým podtypem typu `HTMLElement`, který je zase přimým podtypem typu `Element`. Nejvýše v hierarchii je pak typ `EventTarget`, který ještě potkáme dále v této lekci.
+Tato hierarchie ukazuje vztahy :term{cs=podtyp/nadtyp en=subtype/supertype} mezi některými základními typy pro práci s DOMem. Zde je vidět, že například `HTMLInputElement` je přimým podtypem typu `HTMLElement`, který je zase přimým podtypem typu `Element`. Nejvýše v hierarchii je pak typ `EventTarget`, který ještě potkáme dále v této lekci.

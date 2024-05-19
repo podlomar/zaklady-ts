@@ -1,6 +1,6 @@
 ## Pole a objekty
 
-V minulé lekci jsme si ukázali takzvané _primitivní typy_: `string`, `number`, `boolean`, `null`, `undefined`, `bigint` a `symbol`. Tyto typy slouží k ukládání jednoduchých hodnot, jako jsou čísla, řetězce nebo logické hodnoty. Slouží také jako základní stavební kameny pro takzvané _složené typy_, které umožňují ukládat složitější datové struktury.
+V úvodní lekci jsme si ukázali takzvané _primitivní typy_: `string`, `number`, `boolean`, `null`, `undefined`, `bigint` a `symbol`. Tyto typy slouží k ukládání jednoduchých hodnot, jako jsou čísla, řetězce nebo logické hodnoty. Slouží také jako základní stavební kameny pro takzvané _složené typy_, které umožňují ukládat složitější datové struktury.
 
 Pokud chceme například vytvořit typ pro pole hodnot, použijeme následující syntaxi:
 
