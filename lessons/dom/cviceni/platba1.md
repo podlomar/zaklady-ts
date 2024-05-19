@@ -13,5 +13,5 @@ V první části našeho projektu vytvoříme chytré vstupní pole pro zadání
 1.  Nejprve si rozmyslete logiku toho, jak bude vstupní pole pro zadání čísla platební karty zajišťovat doplňování pomlček.
     - Pole by mělo příjímat pouze číslice a celkový počet číslic by měl být omezen na 16.
     - Rozumná strategie je nejdříve ze zadaného vstupu odstranit všechno, co nejsou číslice a poté podle počtu číslic vložit do řetězce pomlčky.
-    - Bude se vám hodit funkce `filterNonDigits` ze cvičení v [první lekci](../../uvod-do-ts/cv-uvod.md).
+    - Bude se vám hodit funkce `filterNonDigits` ze [cvičení](https://kodim.cz/kurzy/zaklady-ts/lekce/priprava/ulozky/funkce) v úvodní lekci kurzu.
 1.  Implementujte výše zmíněnou logiku pomocí čístého JavaScriptu. Až poté doplňte typy tak, aby každá proměnná měla explicitně uvedený typ, stejně tak parametry funkcí a návratové hodnoty.

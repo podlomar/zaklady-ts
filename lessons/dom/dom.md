@@ -32,4 +32,6 @@ const emailInput: HTMLInputElement = document.querySelector('div.email');
 console.log(emailInput.value); // Zde nastane chyba až při běhu programu
 ```
 
-Zde tedy pozor na to, že TypeScript nás neochrání úplně před všemi typovými chybami, které můžeme provést.
+:::box{type=warning}
+TypeScript nás neochrání úplně před všemi typovými chybami, které můžeme provést. Je nutné rozumět tomu, co námi napsaný kód dělá, a jak se v něm chovají jednotlivé typy.
+:::
