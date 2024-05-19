@@ -4,5 +4,6 @@ access: protected
 sections:
   - vyuziti-ts
   - dom
+  - podtyp-nadtyp
   - udalosti
   - cv-platba

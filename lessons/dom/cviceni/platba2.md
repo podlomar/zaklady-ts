@@ -1,5 +1,5 @@
 ---
-title: Platba kartou, aktivace karet
+title: Platba kartou - aktivace karet
 lead: Zobrazování typu karty podle zadávaného čísla
 demand: 3
 solutionAccess: protected

@@ -1,5 +1,5 @@
 ---
-title: Platba kartou, první část
+title: Platba kartou - inteligentní vstup
 lead: Logika doplňování pomlček v čísle platební karty
 demand: 3
 solutionAccess: protected
