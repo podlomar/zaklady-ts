@@ -21,7 +21,17 @@ const patientIds: string[] = [
 ];
 ```
 
-Vaším úkolem je vytvořit funkci `parsePatientId`, která bude mít parametr typu `string` a vrátí objekt, představující informace o pacientovi.
+Vaším úkolem je vytvořit funkci `parsePatientId`, která jako parametr obdrží rodné číslo  a vrátí objekt, představující informace o pacientovi.
+
+### Jak fungují rodná čísla
+
+Rodné číslo je identifikační číslo, které slouží k jednoznačné identifikaci osoby. V České republice se rodné číslo (většinou) skládá z 10 číslic a jednoho lomítka, které ho rozděluje na dvě části:
+
+- Prvních 6 číslic udává datum narození v pořadí rok (2 číslice), měsíc (2 číslice) a den (2 číslice). Například pro muže narozeného 2. března 1990 by prvních 6 číslic mělo být 900302.
+- Zbytek rodného čísla (tj. část za lomítkem) slouží k identifikaci konkrétní osoby.
+Ženy mají k číslu měsíce přičteno 50, např. 845128/6219 je číslo patřící ženě narozené 28. listopadu 1984.
+
+### Úkol
 
 Budeme chtít, aby objekt obsahoval následující informace:
 
@@ -31,7 +41,9 @@ Budeme chtít, aby objekt obsahoval následující informace:
 
 Navrhněte typescriptový typ `Patient` obsahující výše uvedené vlastnosti a vytvořte funkci `parsePatientId`, která bude mít parametr typu `string` a vrátí objekt typu `Patient`.
 
-**Jako výsledek úkolu odevzdejte:**
+### Odevzdání
+
+Jako výsledek úkolu odevzdejte:
 
 - soubor s definicí typu `Patient` a funkcí `parsePatientId`,
 - soubor, který obsahuje pole objektů s informacemi o pacientech z pole `patientIds`.
