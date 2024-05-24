@@ -1,6 +1,7 @@
 ---
 title: Nemovitosti
 demand: 2
+lead: Vytvořte datový model pro reprezentaci nemovitostí k prodeji nebo pronájmu.
 solutionAccess: protected
 ---
 

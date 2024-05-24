@@ -1,6 +1,7 @@
 ---
 title: Jednoduché modely
 demand: 2
+lead: Vytvořte jednoduché datové modely pro reprezentaci času, barev a adresy.
 ---
 
 Vytvořte v TypeScriptu datové modely podle následujících zadání.

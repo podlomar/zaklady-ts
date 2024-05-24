@@ -1,6 +1,7 @@
 ---
 title: Jednohubky
 demand: 2
+lead: Vytvořte jednoduché funkce pro práci s polem čísel, řetězců a výčtovým typem.
 ---
 
 Vytvořte v TypeScriptu funkce podle následujících zadání. Každou funkci vyzkoušejte na několika vstupech a výstupech pomocí `console.log`. U všech funkcí používejte TypeScriptové typy pro parametry i návratové hodnoty.
