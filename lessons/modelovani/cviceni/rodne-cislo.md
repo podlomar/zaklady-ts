@@ -1,7 +1,7 @@
 ---
 title: Rodné číslo
 demand: 3
-lead: 
+lead: Vytvořte parser pro rodná čísla.
 ---
 
 V následujícím seznamu vidíte seznam rodných čísel pacientů, kteří navštívili v jeden konkrétní den lékařskou ordinaci.
