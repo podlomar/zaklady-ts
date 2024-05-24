@@ -39,11 +39,11 @@ Budeme chtít, aby objekt obsahoval následující informace:
 - pohlaví pacienta jako výčtový typ,
 - kontrolní číslici.
 
-Navrhněte typescriptový typ `Patient` obsahující výše uvedené vlastnosti a vytvořte funkci `parsePatientId`, která bude mít parametr typu `string` a vrátí objekt typu `Patient`.
+Navrhněte TypeScriptový typ `Patient` obsahující výše uvedené vlastnosti a vytvořte funkci `parsePatientId`, která bude mít parametr typu `string` a vrátí objekt typu `Patient`.
 
 ### Odevzdání
 
 Jako výsledek úkolu odevzdejte:
 
-- soubor s definicí typu `Patient` a funkcí `parsePatientId`,
+- soubor s definicí typu `Patient` a funkcí správně otypovanou funkcí `parsePatientId`,
 - soubor, který obsahuje pole objektů s informacemi o pacientech z pole `patientIds`.
