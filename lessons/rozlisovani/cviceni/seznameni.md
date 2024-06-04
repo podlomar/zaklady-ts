@@ -1,5 +1,6 @@
 ---
 title: Seznámení s projektem
+lead: Vytvoření základního projektu pro aplikaci.
 demand: 2
 ---
 

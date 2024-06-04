@@ -1,5 +1,6 @@
 ---
 title: Datový model
+lead: Vytvoření datového modelu pro položky kalendáře.
 demand: 3
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Zobrazení položek kalendáře
+lead: Vytvoření funkce pro zobrazení jednotlivých položek.
 demand: 3
 ---
-
 
 Jakmile máme hotový datový model, můžeme se pustit do zobrazení položek kalendáře.
 

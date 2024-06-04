@@ -1,9 +1,10 @@
 ---
 title: Bonusy
+lead: Několik nápadů, jak můžete aplikaci dále vylepšit.
 demand: 4
 ---
 
-Aplikace s kalendářem se dá rozšířit mnoha různými způsoby. Zde je několik nápadů, jak můžete aplikaci vylepšit:
+Aplikace s kalendářem se dá rozšířit mnoha různými způsoby. Zde je několik nápadů, jak můžete její fungování rozšířit a vylepšit:
 
 1.  **Více typů položek** - můžete vymyslet více typů událostí a označovat je různými barvami, například pracovní, osobní a rodinné události.
 1.  **Skutečný čas** - místo vlastního objektu pro časový údaj použijte JavaScriptový `Date`. Pak můžete položky v kalendáři ukotvit na skutečné reálné datum a zobrazit skutečný aktuální týden. Zde by se hodilo v aplikaci zobrazit například aktuální den, o kolikátý týden v roce jde apod.
