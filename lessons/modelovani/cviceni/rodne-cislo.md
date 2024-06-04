@@ -29,7 +29,7 @@ Rodné číslo je identifikační číslo, které slouží k jednoznačné ident
 
 - Prvních 6 číslic udává datum narození v pořadí rok (2 číslice), měsíc (2 číslice) a den (2 číslice). Například pro muže narozeného 2. března 1990 by prvních 6 číslic mělo být 900302.
 - Zbytek rodného čísla (tj. část za lomítkem) slouží k identifikaci konkrétní osoby.
-Ženy mají k číslu měsíce přičteno 50, např. 845128/6219 je číslo patřící ženě narozené 28. listopadu 1984.
+Ženy mají k číslu měsíce přičteno 50, např. 846128/6219 je číslo patřící ženě narozené 28. listopadu 1984.
 
 ### Úkol
 
@@ -45,5 +45,5 @@ Navrhněte TypeScriptový typ `Patient` obsahující výše uvedené vlastnosti 
 
 Jako výsledek úkolu odevzdejte:
 
-- soubor s definicí typu `Patient` a funkcí správně otypovanou funkcí `parsePatientId`,
+- soubor s definicí typu `Patient` a správně otypovanou funkcí `parsePatientId`,
 - soubor, který obsahuje pole objektů s informacemi o pacientech z pole `patientIds`.
