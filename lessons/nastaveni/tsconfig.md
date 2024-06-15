@@ -24,7 +24,7 @@ Obsah souboru `tsconfig.json` v našem projektu vypadá takto:
 
 ## Verze JavaScriptu
 
-Nastavení `target` určuje, do jaké verze JavaScriptu chcete váš TypeScriptový kód přeložit. Jak možná víte, JavaScript se neustále vyvíjí a přibývají nové funkce a vylepšení. V podstatě každý rok vychází nová verze JavaScriptu po označím jako `es2019 (es10)`, `es2020 (es11)`, `se2021 (es12)` atd. Pokud se chcete podívat, co například přibylo ve verzi `ES2020`, můžete využít stránku [Can I use](https://caniuse.com/?search=es2019).
+Nastavení `target` určuje, do jaké verze JavaScriptu chcete váš TypeScriptový kód přeložit. Jak možná víte, JavaScript se neustále vyvíjí a přibývají nové funkce a vylepšení. V podstatě každý rok vychází nová verze JavaScriptu po označím jako `es2019 (es10)`, `es2020 (es11)`, `es2021 (es12)` atd. Pokud se chcete podívat, co například přibylo ve verzi `ES2020`, můžete využít stránku [Can I use](https://caniuse.com/?search=es2019).
 
 Prohlížeče bohužel nefungují tak, že by přímo podporovaly všechny funkce z nějaké verze JavaScriptu. Místo toho si různé prohlížeče jako Chroma, Safari apod. vybírají různé funkce z různých verzí. Pokud pracujete na komerčním projektu a chcete si být zcela jistí, že bude opravdu fungovat na všech prohlížečích, jediné opravdu bezpečné nastavení je `target: "es2015"` nebo-li `target: "es6"`. To je nejstarší verze JavaScriptu, kterou všechny prohlížeče opravdu reálně podporují.
 
