@@ -1,5 +1,6 @@
 ---
 title: Tvorba pomocných typů
+lead: Vytvořte jednoduché generické pomocné typy 
 demand: 3
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Parametrické typy ve funkcích
+lead: Vytvořte obecné funkce pro práci s polem libovolného typu.
 demand: 3
 ---
 

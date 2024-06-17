@@ -18,7 +18,7 @@ Poté vytvoříme funkci, která stáhne všechny úkoly:
 ```ts
 const fetchTodos = async (): Promise<Todo[]> => {
   const response = await fetch('https://jsonplaceholder.typicode.com/todos');
-  const data = await response.json() as Todo[];
+  const data: Todo[] = await response.json();
   return data;
 };
 ```
