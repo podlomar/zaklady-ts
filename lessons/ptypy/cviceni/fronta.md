@@ -1,6 +1,6 @@
 ---
 title: Prioritní fronta
-lead: Naprogramujte generickou datovou strukturu s názvem _prioritní fronta_.
+lead: Naprogramujte generickou datovou strukturu s názvem prioritní fronta.
 demand: 3
 ---
 
@@ -30,11 +30,7 @@ Implementujte funkce pro práci s prioritní frontou:
 
 ### Použití
 
-1. Vyzkoušejte si vytvořit frontu, která bude obsahovat řetězce, tedy například názvy úkolů. Přidejte jich několik do fronty s různými prioritami a zjistěte, zda se vám podaří je vyjmout v pořadí podle priorit.
-1.  Zkuste složitější příklad, kdy úkoly nejsou pouze řetězce, ale objekty s nějakými vlastnostmi. K úkolu může patřit například
-    - `label`: bug, feature, refactoring...
-    - `assignee`: jméno osoby, která má úkol vykonat
-    - `projekt`: jméno projektu, ve kterém se úkol nachází
+Vyzkoušejte si vytvořit frontu, která bude obsahovat řetězce, tedy například názvy úkolů. Přidejte jich několik do fronty s různými prioritami a zjistěte, zda se vám podaří je vyjmout v pořadí podle priorit.
 
 :::solution
 ```ts
@@ -42,7 +38,6 @@ const enqueue = <T>(queue: PriorityQueue<T>, queItem: QueueItem<T>): PriorityQue
   return [...queue, queItem];
 };
 
-// Varianta s null
 const dequeue = <T>(queue: PriorityQueue<T>): QueueItem<T> | null => {
   if (queue.length === 0) {
     return null; 
@@ -57,30 +52,4 @@ const dequeue = <T>(queue: PriorityQueue<T>): QueueItem<T> | null => {
 
   return highestPriorityItem;
 }
-
-// Varianta s Option
-interface Some<T> {
-  kind: 'some',
-  value: T,
-}
-
-interface None {
-  kind: 'none',
-}
-
-type Option<T> = Some<T> | None;
-
-const dequeue = <T>(queue: PriorityQueue<T>): Option<QueueItem<T>> => {
-  if (queue.length === 0) {
-    return { kind: 'none' };
-  }
-  let highestPriorityItem = queue[0];
-  queue.forEach((item: QueueItem<T>) => {
-    if (item.priority > highestPriorityItem.priority) {
-      highestPriorityItem = item;
-    }
-  });
-  return { kind: 'some', value: highestPriorityItem };
-};
-```
 ::: 

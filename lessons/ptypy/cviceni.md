@@ -4,3 +4,4 @@ V následujících cvičeních pořádně procvičíme práci generickými typy.
 
 ::exc[cviceni/funkce]
 ::exc[cviceni/pomocne-typy]
+::exc[cviceni/fronta]
