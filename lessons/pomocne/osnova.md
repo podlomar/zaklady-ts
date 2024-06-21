@@ -1,0 +1,6 @@
+- mapové a indexové typy
+- type guards
+- readonly, partial, required
+- keyof
+- as const
+- unkown
