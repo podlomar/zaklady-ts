@@ -5,5 +5,7 @@ sections:
   - react-ts
   - komponenty
   - funkce
-  - stav-udalosti
+  - stavy-fetch
+  - udalosti
+  - children
   - projekt
