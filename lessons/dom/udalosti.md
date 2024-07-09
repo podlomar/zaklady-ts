@@ -73,4 +73,4 @@ Tímto TypeScriptu říkáme, že si jsme jisti, že `event.target` je opravdu t
 Říkat TypeScriptu, že něco víme líp než on, je hodně drzé a nebezpečné. Většinou si totiž myslíme, jak nejsme chytří a víme všechno líp, ale ve skutečnosti se mýlíme. Přetypování by se tedy mělo používat jen velmi velmi zřídka a jen v situacích, kdy jsme si opravdu jistí, co děláme. 
 :::
 
-Zrovna v případě `event.target` nám ovšem jiná možnost nezbývá. Později v tomto kurzu ještě narazíme na jeden další případ, kdy se přetypování nejde vyhnout, ale jinak se mu budeme striktně vyhýbat.
+Zrovna v případě `event.target` nám ovšem jiná možnost než přetypování nezbývá. Varováním budiž, že toto je jediný případ z celého kurzu, kdy je přetypování opravdu nutné. Jinak se mu vždy budeme za každou cenu vyhýbat.
