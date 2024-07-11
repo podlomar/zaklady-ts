@@ -7,7 +7,7 @@ lead: Naprogramujte parser a formátovač URL adresy.
 V tomto cvičení si budeme hrát s internetovými adresami. Nejdříve vytvořte typ pro reprezentaci URL adresy. Postupujte podle následujících kroků:
 
 1. Podle [tohoto článku](https://medium.com/@joseph.pyram/9-parts-of-a-url-that-you-should-know-89fea8e11713) si nastudujte, z jakých částí se skládá URL adresa. 
-1. Vytvořte typ `Url` s vlastnostmi pro jednotlivé části URL adresy. Dobře si rozmyslete typy jednotlivých vlastností a také, které z nich jsou nepovinné.
+1. Vytvořte typ `Url` s vlastnostmi pro jednotlivé části URL adresy. Dobře si rozmyslete typy jednotlivých vlastností a také, které z nich jsou nepovinné. Všechny vlastnosti udělejte pouze pro čtení.
 1. Vytvořte proměnnou typu `Url` a vložte do ní nějakou URL adresu. Vypište tento objekct pomocí `console.log`.
 1. Vytvořte funkci `formatUrl`, která bude mít parametr typu `Url` a vrátí řetězec se správě zformátovanou URL adresou. Vyzkoušejte funkci na několika různých URL adresách a výsledky vypište pomocí `console.log`.
 

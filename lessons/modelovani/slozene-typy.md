@@ -1,3 +1,18 @@
+## Složené typy
+
+V úvodní lekci jsme si ukázali takzvané _primitivní typy_: `string`, `number`, `boolean`, `null`, `undefined`, `bigint` a `symbol`. Tyto typy slouží k ukládání jednoduchých hodnot, jako jsou čísla, řetězce nebo logické hodnoty. Slouží také jako základní stavební kameny pro takzvané _složené typy_, které umožňují ukládat složitější datové struktury.
+
+## Pole a objekty
+
+Pokud chceme například vytvořit typ pro pole hodnot, použijeme následující syntaxi:
+
+```ts
+const ages: number[] = [18, 20, 25, 30];
+const names: string[] = ["Alice", "Bob", "Charlie", "David"];
+```
+
+Stačí tedy vždy napsat typ, který pole obsahuje, a za něj přidat hranaté závorky. V tomto jsou pole velice jednoduchá.
+
 ## Sjednocení typů
 
 V reálných projektech často chceme, aby nějaká proměnná mohla být více než jednoho typu. Můžeme například říct, že PSČ zadané do formuláře může být buď číslo, nebo řetězec. K tomu v TypeScriptu slouží operátor `|`. 
@@ -12,19 +27,9 @@ Sjednocení se nám velmi hodí v případě, kdy nějaká proměnná nebo vlast
 const address: string | undefined = undefined;
 ```
 
-nebo:
-
-```ts
-interface User {
-  name: string;
-  email: string;
-  address: string | null;
-}
-```
-
 ## Strict null checks
 
-Pokud v předchozí ukázce najedete myší na proměnnou `address`, uvidíte, že TypeScript vám bude hlásit typ `string`, nikoliv `string | undefined`. To vypadá jako by nám `undefined` někam zmizelo. TypeScript totiž v základním nastavení typy `null` a `undefined` zcela ignoruje. Máme-li tedy někde proměnnou typ `string` nebo třeba `User`, můžeme do ní bez problémů přiřadit i `null` nebo `undefined`. Takové chování je však téměř vždy nežádoucí, protože při vývoji aplikací chceme přesně řečeno, kde může být `null` a kde ne. 
+Pokud v předchozí ukázce najedete myší na proměnnou `address`, uvidíte, že TypeScript vám bude hlásit typ `string`, nikoliv `string | undefined`. To vypadá jako by nám `undefined` někam zmizelo. TypeScript totiž v základním nastavení typy `null` a `undefined` zcela ignoruje. Máme-li tedy někde proměnnou například typu `string`, můžeme do ní bez problémů přiřadit i `null` nebo `undefined`. Takové chování je však téměř vždy nežádoucí, protože při vývoji aplikací chceme přesně říct, kde může být `null` a kde ne. 
 
 TypeScript má nastavení `strictNullChecks`, které nám umožňuje zapnout přísnou kontrolu `null` a `undefined`. Když je toto nastavení zapnuté, TypeScript bude hlásit chybu pokaždé, když se pokusíme přiřadit `null` nebo `undefined` do proměnné, do které tyto hodnoty nepatří.
 
@@ -71,7 +76,7 @@ const direaction: "up" | "down" | "left" | "right" = "left";
 const dayOfWeek: 1 | 2 | 3 | 4 | 5 | 6 | 7 = 4;
 ```
 
-Těmto typům se často říká _výčtové typy_.
+Těmto typům se také často říká _výčtové typy_.
 
 ## Alias
 
