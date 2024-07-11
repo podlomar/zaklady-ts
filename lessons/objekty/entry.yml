@@ -1,0 +1,10 @@
+title: Složené typy a objekty
+lead: Ukážeme si, jak skládat složitější konstrukce ze základních typů a jak pracovat s typy pro objekty
+access: protected
+sections:
+  - slozene-typy
+  - objekty
+  - any-unknown
+  - cviceni
+  - domaci-ukol
+  - ulozky

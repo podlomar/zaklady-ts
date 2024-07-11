@@ -5,7 +5,7 @@ intro: intro.md
 lessons:
   - lessons/priprava
   - lessons/dom
-  - lessons/modelovani
+  - lessons/objekty
   - lessons/rozlisovani
   - lessons/nastaveni
   - lessons/ptypy

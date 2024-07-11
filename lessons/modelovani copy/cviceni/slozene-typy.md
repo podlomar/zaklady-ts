@@ -1,10 +1,10 @@
 ---
-title: Jednoduché modely
+title: Složené typy a objekty
 demand: 2
-lead: Vytvořte jednoduché datové modely pro reprezentaci času, barev a adresy.
+lead: Vytvořte typy pro reprezentaci času, barev a adresy.
 ---
 
-Vytvořte v TypeScriptu datové modely podle následujících zadání.
+Vytvořte v TypeScriptu typy podle následujících zadání.
 
 ### Čas
 
