@@ -40,7 +40,7 @@ const user: User = {
 }; // Chyba: V typu Person chybí vlastnost email
 ```
 
-### Vlastnosti nepovinné a pouze pro čtení
+## Vlastnosti nepovinné a pouze pro čtení
 
 Vlastnosti objektů můžeme označit jako nepovinné pomocí `?` za názvem vlastnosti. Například vlastnost `lastLoggedIn` v objektu reprezentujícím uživatele může být nepovinná, protože uživatel se možná ještě nikdy nepřihlásil.
 
