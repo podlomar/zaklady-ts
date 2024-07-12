@@ -1,4 +1,4 @@
-## Cvičení: Složené typy a modelování
+## Cvičení: Složené typy a objekty
 
 ::exc[cviceni/jednohubky]
 ::exc[cviceni/slozene-typy]
