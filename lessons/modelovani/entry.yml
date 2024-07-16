@@ -1,9 +1,9 @@
-title: Složené typy a datové modelování
+title: Dědičnou a datové modely
 lead: Ukážeme si, jak skládat složitější konstrukce ze základních typů a jak pomocí nich modelovat nějakou datovou oblast
 access: protected
 sections:
-  - slozene-typy
-  - objekty
+  - dedicnost
+  - excess-check
   - any-unknown
   - cviceni
   - domaci-ukol
