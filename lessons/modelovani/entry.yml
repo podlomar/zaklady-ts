@@ -4,7 +4,8 @@ access: protected
 sections:
   - dedicnost
   - excess-check
-  - any-unknown
+  - modelovani
+  - platforma
   - cviceni
   - domaci-ukol
   - ulozky
