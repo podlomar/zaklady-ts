@@ -3,7 +3,7 @@
 Pokračujme v modelu z přechozí sekce. Nyní máme pole osob přihlášených na nějakou akci:
 
 ```ts
-const participants: Person[] = [
+const participants: User[] = [
   {
     name: 'Robert',
     email: 'robert.sipek@gmail.com',
@@ -27,37 +27,37 @@ const participants: Person[] = [
 ];
 ```
 
-Nyní bychom chtěli vytvořit seznam účastníků, kteří jsou studenti. Narazíme však na problém. Všechny účastníci jsou typu `Person` a my nemáme jak poznat, kdo je student a kdo lektor. TypeScript nám nedovolí přistoupit k žádným vlastnostem, které jsou specifické pro studenty nebo lektory.
+Nyní bychom chtěli z tohoto pole získat seznam účastníků, kteří jsou studenti. Narazíme však na problém. Všechny účastníci jsou typu `User` a my nemáme jak poznat, kdo je student a kdo lektor. TypeScript nám nedovolí přistoupit k žádným vlastnostem, které jsou specifické pro studenty nebo lektory.
 
 ```ts
-participants.forEach((person) => {
-  if (person.level) {
-    // ❌ Property 'level' does not exist on type 'Person'.
+participants.forEach((user) => {
+  if (user.level) {
+    // ❌ Property 'level' does not exist on type 'User'.
   }
 });
 ```
 
-V TypeScriptu existuje speciální technika, která se jmenuje __discriminated unions__. Do každého podtypu `Person` přidáme speciální vlastnost, která se v našem přípdě bude jmenovat `role`.
+V TypeScriptu existuje speciální technika, která se jmenuje __discriminated unions__. Do každého podtypu `User` přidáme speciální vlastnost, která se v našem přípdě bude jmenovat `role`.
 
 ```ts
-interface Student extends BasePerson {
+interface Student extends BaseUser {
   role: 'student';
   level: 'beginner' | 'intermediate' | 'advanced';
 }
 
-interface Teacher extends BasePerson {
+interface Teacher extends BaseUser {
   role: 'teacher';
   courses: string[];
 }
 ```
 
-Vlastnost `role` má v každém podtypu jinou hodnotu, která je přímo literál udávající název role. Když pak tyto typy sjednotíme pod `Person`, můžeme vyzkoušet, jakého typu bude vlastnost `role`:
+Vlastnost `role` má v každém podtypu jinou hodnotu, která je přímo literál udávající název role. Když pak tyto typy sjednotíme pod `User`, můžeme vyzkoušet, jakého typu bude vlastnost `role`:
 
 ```ts
 person.role; // "student" | "teacher"
 ```
 
-TypeScript je dokonce tak chytrý, že když v podmínce `if` použijeme vlastnost `role`, v jednotlivých větvích podmínky bude mít proměnná `person` automaticky správný typ:
+TypeScript je dokonce tak chytrý, že když v podmínce `if` použijeme vlastnost `role`, v jednotlivých větvích podmínky bude mít proměnná `user` automaticky správný typ:
 
 ```ts
 participants.forEach((person) => {
