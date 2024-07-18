@@ -39,8 +39,8 @@ Ať už si zvolíte jakýkoliv postup, postupujte dle těchto kroků:
 
 Tímto byste měli mít aplikaci hotovou. Pokud vám tento projekt přišel jako procházka růžovým sadem a toužíte po větší výzvě, můžete se pustit do bonusových úkolů.
 
-:::solution
+<!-- :::solution
 
 Řešení projektu bez bonusů najdete v [tomto repozitáři](https://github.com/kodim-vyuka/cviceni-kalendar-reseni).
 
-:::
+::: -->
