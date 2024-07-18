@@ -2,7 +2,6 @@
 title: Nemovitosti
 demand: 2
 lead: Vytvořte datový model pro reprezentaci nemovitostí k prodeji nebo pronájmu.
-solutionAccess: protected
 ---
 
 Vytvořte v TypeScriptu datový model pro webovou aplikaci, která nabízí nemovitosti k prodeji nebo pronájmu.
